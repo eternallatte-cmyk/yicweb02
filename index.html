@@ -145,7 +145,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .tv-t{font-size:var(--fs);font-weight:600;color:#222;margin-bottom:4px}
 .tv-d{font-size:var(--fsm);color:#555;line-height:1.6}
 
-/* FOREIGN */
+/* FOREIGN INFO */
 .fw-box{background:#fff;border:1px solid #eaeaea;border-radius:12px;padding:24px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
 .fw-title{font-size:var(--fsh3);font-weight:600;color:var(--b800);margin-bottom:16px}
 .fw-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
@@ -181,18 +181,6 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .fq-a{font-size:var(--fs);color:#555;line-height:1.8;padding-left:26px;position:relative}
 .fq-a:before{content:"A";position:absolute;left:0;color:var(--w600);font-weight:600;font-size:var(--fs);top:0}
 
-/* FORM */
-.form-wrap{background:#fff;border:1px solid #eaeaea;border-radius:12px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
-.form-row{margin-bottom:16px}
-.form-label{font-size:var(--fsm);font-weight:600;color:#222;margin-bottom:8px;display:block}
-.form-input{width:100%;padding:14px;border:1px solid #ccc;border-radius:8px;font-size:var(--fsm);color:#333;background:#fff;font-family:inherit}
-.form-input:focus{outline:none;border-color:var(--g600);background:#fff}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.form-btn{width:100%;background:var(--g600);color:#fff;border:none;padding:16px;border-radius:8px;font-size:var(--fs);font-weight:600;cursor:pointer;margin-top:8px}
-.form-note{font-size:var(--fss);color:#888;text-align:center;margin-top:12px;line-height:1.6}
-.form-success{display:none;background:var(--g50);border-radius:12px;padding:30px;text-align:center;border:1px solid var(--g100)}
-.form-success p{font-size:var(--fs);color:var(--g800);line-height:1.8}
-
 /* CTA */
 .cta{background:var(--g600);padding:48px 24px;text-align:center}
 .cta h2{font-size:var(--fsh2);font-weight:600;color:#fff;margin-bottom:16px}
@@ -201,13 +189,18 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .cta-w{background:#fff;color:var(--g600);border:none;padding:14px 24px;border-radius:24px;font-size:var(--fs);font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
 .cta-tel{font-size:var(--fs);color:rgba(255,255,255,.9);line-height:1.6}
 
-/* CONTACT */
-.con-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+/* CONTACT & BIG LOGO */
+.con-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .con-c{background:#fff;border:1px solid #eaeaea;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
 .con-l{font-size:var(--fss);color:#888;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
 .con-v{font-size:var(--fs);font-weight:600;color:#222;line-height:1.5}
 .con-s{font-size:var(--fsm);color:#555;margin-top:4px;line-height:1.5}
 .line-add-btn{display:inline-flex;align-items:center;gap:8px;background:#06C755;color:#fff;padding:10px 18px;border-radius:20px;font-size:var(--fsm);font-weight:600;text-decoration:none;margin-top:10px}
+
+.big-logo-sec{text-align:center;padding:48px 24px;background:#fff;border-top:1px solid #eaeaea}
+.big-logo-img{max-width:260px;width:100%;height:auto;margin-bottom:16px}
+.big-logo-t{font-size:24px;font-weight:600;color:var(--g800);margin-bottom:8px}
+.big-logo-s{font-size:16px;color:#666;letter-spacing:0.1em}
 
 .footer{padding:24px;border-top:1px solid #eaeaea;text-align:center;background:#fafafa}
 .footer p{font-size:var(--fsm);color:#666;line-height:1.8}
@@ -215,13 +208,11 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .soc-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:20px;font-size:var(--fsm);font-weight:600;text-decoration:none;border:1px solid #ddd;color:#555;background:#fff}
 .soc-fb{color:#1877F2;border-color:#1877F2}
 .soc-line{color:#06C755;border-color:#06C755}
-
 .line-svg{width:18px;height:18px;flex-shrink:0}
 
 @media(max-width:500px){
   .hero h1{font-size:24px}
   .con-grid{grid-template-columns:1fr}
-  .form-grid{grid-template-columns:1fr}
   .compare-wrap{grid-template-columns:1fr}
   .gallery-grid{grid-template-columns:1fr 1fr}
   .gallery-item.wide{grid-column:span 1}
@@ -237,7 +228,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 
 <nav class="nav">
   <div class="logo-wrap">
-    <img src="LINE群組LOGO-3 透明背景_工作區域 1.png" alt="懿芯辰居家長照機構 LOGO" class="logo-img">
+    <img src="logo.png" alt="懿芯辰居家長照機構 LOGO" class="logo-img">
     <div class="logo-t"><span id="Ln">懿芯辰居家長照機構</span><small id="Ls">花蓮縣合法立案 · 秀林鄉在地</small></div>
   </div>
   <div class="nav-r">
@@ -277,7 +268,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   <div class="tc"><div class="tc-i">📋</div><div class="tc-t" id="Ltr2">長照2.0特約</div><div class="tc-s" id="Ltr2s">補助適用</div></div>
   <div class="tc"><div class="tc-i">🌿</div><div class="tc-t" id="Ltr3">秀林+壽豐</div><div class="tc-s" id="Ltr3s">在地深根</div></div>
   <div class="tc"><div class="tc-i">👥</div><div class="tc-t" id="Ltr4">16人專業團隊</div><div class="tc-s" id="Ltr4s">照服員+督導</div></div>
-  <div class="tc"><div class="tc-i">🌏</div><div class="tc-t" id="Ltr5">多語服務</div><div class="tc-s" id="Ltr5s">中英越印尼語</div></div>
+  <div class="tc"><div class="tc-i">🌏</div><div class="tc-t" id="Ltr5">多語服務</div><div class="tc-s" id="Ltr5s">越印英中</div></div>
 </div>
 
 <div class="sec">
@@ -286,27 +277,27 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   
   <div class="gallery-grid">
     <div class="gallery-item wide">
-      <img src="image_121fc8.jpg" alt="懿芯辰與長輩大合照">
+      <img src="p1.jpg" alt="懿芯辰與長輩大合照">
       <div class="gallery-caption"><p id="Lgc1">與秀林鄉長輩們的大家庭合照 — 這就是我們服務的動力</p></div>
     </div>
     <div class="gallery-item">
-      <img src="image_121fc1.jpg" alt="在長青老人會獲得肯定">
+      <img src="p2.jpg" alt="在長青老人會獲得肯定">
       <div class="gallery-caption"><p id="Lgc2">長青老人會頒獎肯定</p></div>
     </div>
     <div class="gallery-item">
-      <img src="image_121fe2.jpg" alt="在地市集宣傳推廣">
+      <img src="p3.jpg" alt="在地市集宣傳推廣">
       <div class="gallery-caption"><p id="Lgc3">走入在地市集，推廣長照服務</p></div>
     </div>
     <div class="gallery-item">
-      <img src="image_1222a7.jpg" alt="團隊聚餐">
+      <img src="p4.jpg" alt="團隊聚餐">
       <div class="gallery-caption"><p id="Lgc4">團隊活力日常</p></div>
     </div>
     <div class="gallery-item">
-      <img src="image_121fe7.jpg" alt="與社區長輩同樂">
+      <img src="p5.jpg" alt="與社區長輩同樂">
       <div class="gallery-caption"><p id="Lgc5">熱情參與在地活動</p></div>
     </div>
     <div class="gallery-item">
-      <img src="image_122001.jpg" alt="在部落服務現場">
+      <img src="p6.jpg" alt="在部落服務現場">
       <div class="gallery-caption"><p id="Lgc6">見證來自部落的故事</p></div>
     </div>
   </div>
@@ -437,24 +428,21 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   <div class="cost-intro"><p id="Lci">長照2.0依照 <strong>家庭收入</strong> 分三類，收入越低補助越多。<strong>最多只需自付 16%，最少只需 5%。</strong></p></div>
   <table class="ctbl">
     <thead><tr>
-      <th id="Lth1">身分類別</th><th id="Lth2">適用對象</th><th id="Lth3">政府補助</th><th id="Lth4">您只需負擔</th>
+      <th id="Lth1">身分類別</th><th id="Lth3">政府補助</th><th id="Lth4">您只需負擔</th>
     </tr></thead>
     <tbody>
       <tr>
-        <td id="Lc1n"><strong>一般戶（第一類）</strong></td>
-        <td id="Lc1w">一般家庭<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">非低收入戶</span></td>
+        <td id="Lc1n">一般戶（第一類）</td>
         <td>84%</td>
         <td><span class="pp pp-r">16%</span></td>
       </tr>
       <tr>
-        <td id="Lc2n"><strong>中低收入戶（第二類）</strong></td>
-        <td id="Lc2w">中低收入戶<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">經認定</span></td>
+        <td id="Lc2n">中低收入戶（第二類）</td>
         <td>95%</td>
         <td><span class="pp pp-r">5%</span></td>
       </tr>
       <tr>
-        <td id="Lc3n"><strong>低收入戶（第三類）</strong></td>
-        <td id="Lc3w">低收入戶<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">經認定</span></td>
+        <td id="Lc3n">低收入戶（第三類）</td>
         <td>100%</td>
         <td><span class="pp pp-w" id="Lc3p">0% (免費)</span></td>
       </tr>
@@ -494,11 +482,11 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
     <div class="fw-cards">
       <div class="fw-card">
         <div class="fw-lang">🇻🇳 Tiếng Việt</div>
-        <div class="fw-msg">Khi bạn cần nghỉ phép, chính phủ Đài Loan có dịch vụ <strong>chăm sóc thay thế (喘息服務)</strong> — người chăm sóc chuyên nghiệp sẽ đến nhà thay bạn. Chủ nhà không cần lo lắng. Gọi cho chúng tôi để biết thêm: <strong>0975-126-270</strong></div>
+        <div class="fw-msg">Khi bạn cần nghỉ phép, chính phủ Đài Loan có dịch vụ <strong>chăm sóc thay thế (喘息服務)</strong> — người chăm sóc chuyên nghiệp sẽ đến nhà thay bạn. Gọi: <strong>0975-126-270</strong></div>
       </div>
       <div class="fw-card">
         <div class="fw-lang">🇮🇩 Bahasa Indonesia</div>
-        <div class="fw-msg">Saat Anda perlu cuti, pemerintah Taiwan punya layanan <strong>perawatan pengganti (喘息服務)</strong> — petugas profesional datang ke rumah menggantikan Anda. Majikan tidak perlu khawatir. Hubungi kami: <strong>0975-126-270</strong></div>
+        <div class="fw-msg">Saat Anda perlu cuti, pemerintah Taiwan punya layanan <strong>perawatan pengganti (喘息服務)</strong> — petugas profesional menggantikan Anda. Hubungi: <strong>0975-126-270</strong></div>
       </div>
     </div>
   </div>
@@ -548,45 +536,6 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
     <div class="fq-item"><div class="fq-q" id="Lq2">家人目前住院，什麼時候可以開始申請長照？</div><div class="fq-a" id="La2">現在就可以！住院期間向護理站說「我想申請居家長照服務，指定懿芯辰」，由醫院出院準備護理師轉介，最快一週內即可開始服務，比出院後再申請快一倍以上，千萬不要等！</div></div>
     <div class="fq-item"><div class="fq-q" id="Lq3">原住民族幾歲可以申請長照？</div><div class="fq-a" id="La3">原住民朋友55歲即符合長照申請資格，比一般民眾早整整10年。秀林鄉太魯閣族鄉親歡迎來電，我們熟悉申請流程，快速協助辦理。</div></div>
     <div class="fq-item"><div class="fq-q" id="Lq4">家裡有外籍看護，還需要長照服務嗎？</div><div class="fq-a" id="La4">可以同時使用！外籍看護請假時，可以申請喘息服務讓我們的照服員來代班，雇主不用擔心空窗期。兩者並行，互不影響。</div></div>
-    <div class="fq-item"><div class="fq-q" id="Lq5">補助之外自付費用大概多少？</div><div class="fq-a" id="La5">一般家庭最多自付16%，中低收入戶5%，低收入戶只需0%。以月費5,000元計算，低收入戶每月只需付0元。歡迎來電免費試算。</div></div>
-  </div>
-</div>
-
-<div class="sec">
-  <div class="sh" id="Lfmh">預約免費諮詢回電</div>
-  <div class="ss" id="Lfms">留下您的聯絡方式，我們在上班時間主動致電，不讓您等待</div>
-  <div class="form-wrap">
-    <div id="formBody">
-      <div class="form-grid">
-        <div class="form-row">
-          <label class="form-label" id="Lfl1">您的姓名</label>
-          <input class="form-input" id="fi-name" type="text" placeholder="王小明">
-        </div>
-        <div class="form-row">
-          <label class="form-label" id="Lfl2">聯絡電話</label>
-          <input class="form-input" id="fi-tel" type="tel" placeholder="09xx-xxx-xxx">
-        </div>
-      </div>
-      <div class="form-row">
-        <label class="form-label" id="Lfl3">居住地區</label>
-        <select class="form-input" id="fi-area">
-          <option id="Lfo0" value="">請選擇</option>
-          <option id="Lfo1" value="秀林鄉">花蓮縣 秀林鄉</option>
-          <option id="Lfo2" value="壽豐鄉">花蓮縣 壽豐鄉</option>
-          <option id="Lfo3" value="其他">其他（請來電確認）</option>
-        </select>
-      </div>
-      <div class="form-row">
-        <label class="form-label" id="Lfl4">想了解的服務（可不填）</label>
-        <input class="form-input" id="fi-msg" type="text" placeholder="例如：居家服務、補助資格、費用試算…">
-      </div>
-      <button class="form-btn" id="Lfmbtn" onclick="submitForm()">送出，等您來電 →</button>
-      <p class="form-note" id="Lfmnote">我們於上班時間（週一至週五）回電，個人資料僅用於本次諮詢</p>
-    </div>
-    <div class="form-success" id="formSuccess">
-      <div style="font-size:40px;margin-bottom:12px">✅</div>
-      <p id="Lfsuccess">感謝您的預留資料！我們會在上班時間致電給您。<br>若有急迫需求，請直接加入 <strong>Line 官方帳號</strong>，我們能更快為您服務！</p>
-    </div>
   </div>
 </div>
 
@@ -632,31 +581,28 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   </div>
 </div>
 
+<div class="big-logo-sec">
+  <img src="logo.png" alt="懿芯辰居家長照機構 LOGO" class="big-logo-img">
+  <div class="big-logo-t" id="LbigT">懿芯辰居家長照機構</div>
+  <div class="big-logo-s" id="LbigS">專業品質服務 · 長照最佳小幫手</div>
+</div>
+
 <div class="footer">
   <div class="footer-social">
-    <a class="soc-btn soc-fb" href="https://www.facebook.com/profile.php?id=61553594532628" target="_blank" id="Lfb">
+    <a class="soc-btn soc-fb" href="https://www.facebook.com/profile.php?id=61553594532628" target="_blank">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-      Facebook 粉絲專頁
+      <span id="Lfb">Facebook 粉絲專頁</span>
     </a>
   </div>
-  <p id="LfootC" style="font-weight:600;color:#333;margin-bottom:8px">© 懿芯辰有限公司附設花蓮縣私立懿芯辰居家長照機構</p>
+  <p id="LfootC" style="font-weight:600; color:#333; margin-bottom:8px;">© 懿芯辰有限公司附設花蓮縣私立懿芯辰居家長照機構</p>
   <p id="LfootA">花蓮縣秀林鄉富世村8鄰富世145-2號</p>
-  <p style="margin-bottom:8px"><span id="LfootT1">服務專線：03-8610668</span>｜<span id="LfootT2">假日緊急：0975-126-270</span></p>
-  <p id="LfootS" style="margin-top:12px;font-size:12px;color:#888">本機構依長期照顧服務法設立，受花蓮縣政府監督管理</p>
+  <p style="margin-bottom:8px;"><span id="LfootT1">服務專線：03-8610668</span>｜<span id="LfootT2">假日緊急：0975-126-270</span></p>
+  <p id="LfootS" style="margin-top:12px;font-size:12px;color:#888;">本機構依長期照顧服務法設立，受花蓮縣政府監督管理</p>
 </div>
 
 </div>
 
 <script>
-// 表單靜態動畫展示
-function submitForm(){
-  const n=document.getElementById('fi-name').value.trim();
-  const t=document.getElementById('fi-tel').value.trim();
-  if(!n||!t){alert('請填寫姓名和聯絡電話 / Please fill in your name and phone number');return;}
-  document.getElementById('formBody').style.display='none';
-  document.getElementById('formSuccess').style.display='block';
-}
-
 // ==========================================
 // 完整多國語言資料庫 (所有 ID 皆已綁定對齊)
 // ==========================================
@@ -667,7 +613,7 @@ zh:{
 'Lh1':'讓家人留在家裡，<br>讓照顧<em>有人陪您一起扛</em>',
 'Ld':'懿芯辰居家長照，由在地16人專業團隊提供居家服務、喘息服務與短照服務。服務秀林鄉、壽豐鄉的長輩、身障朋友與太魯閣族鄉親。',
 'Lb1b':'了解補助資格 →','LlineT':'加Line諮詢','Ltl':'服務專線：<strong>03-8610668</strong>','Ltel2':'假日緊急：<strong>0975-126-270</strong>',
-'Ltr1':'政府立案','Ltr1s':'花蓮縣核准','Ltr2':'長照2.0特約','Ltr2s':'補助適用','Ltr3':'秀林+壽豐','Ltr3s':'在地深根','Ltr4':'16人專業團隊','Ltr4s':'照服員+督導','Ltr5':'多語服務','Ltr5s':'中英越印尼語',
+'Ltr1':'政府立案','Ltr1s':'花蓮縣核准','Ltr2':'長照2.0特約','Ltr2s':'補助適用','Ltr3':'秀林+壽豐','Ltr3s':'在地深根','Ltr4':'16人專業團隊','Ltr4s':'照服員+督導','Ltr5':'多語服務','Ltr5s':'越印英中',
 
 'Lgh':'我們在花蓮，我們在您身邊','Lgs':'從部落到市集，從社區活動到老人會，懿芯辰的腳步遍及秀林鄉、壽豐鄉各個角落',
 'Lgc1':'與秀林鄉長輩們的大家庭合照 — 這就是我們服務的動力',
@@ -699,10 +645,10 @@ zh:{
 
 'Lch':'費用說明：政府高度補助','Lcs':'長照服務以「項目」計費，政府依照收入身分負擔大部分費用。',
 'Lci':'長照2.0依照 <strong>家庭收入</strong> 分三類，收入越低補助越多。<strong>最多只需自付 16%，最少只需 5%。</strong>',
-'Lth1':'身分類別','Lth2':'適用對象','Lth3':'政府補助','Lth4':'您只需負擔',
-'Lc1n':'<strong>一般戶（第一類）</strong>','Lc1w':'一般家庭<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">非低收入戶</span>',
-'Lc2n':'<strong>中低收入戶（第二類）</strong>','Lc2w':'中低收入戶<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">經認定</span>',
-'Lc3n':'<strong>低收入戶（第三類）</strong>','Lc3w':'低收入戶<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">經認定</span>','Lc3p':'0% (免費)',
+'Lth1':'身分類別','Lth3':'政府補助','Lth4':'您只需負擔',
+'Lc1n':'<strong>一般戶（第一類）</strong>',
+'Lc2n':'<strong>中低收入戶（第二類）</strong>',
+'Lc3n':'<strong>低收入戶（第三類）</strong>','Lc3p':'0% (免費)',
 'Lcn':'<strong>費用試算範例：</strong><br>若申請「沐浴服務」（單次核定價 325 元），每週使用 5 天，一個月共 23 天（總價 7,475 元）。<br><br>👉 <strong>一般戶</strong> 每月只需負擔 <strong>1,196 元</strong>。<br>👉 <strong>中低收入戶</strong> 每月只需負擔 <strong>373 元</strong>。<br>👉 <strong>低收入戶</strong> 每月 <strong>0 元</strong>。<br><span style="font-size:14px;color:#666;display:block;margin-top:8px">※ 實際費用將依據照管中心評估之客製化照顧組合為準。</span>',
 
 'Lth':'我們的專業團隊','Lts':'每一位都是有心、有愛的在地照顧人員',
@@ -737,17 +683,10 @@ zh:{
 'Lq2':'家人目前住院，什麼時候可以開始申請長照？','La2':'現在就可以！住院期間向護理站說「我想申請居家長照服務，指定懿芯辰」，由醫院出院準備護理師轉介，最快一週內即可開始服務，比出院後再申請快一倍以上，千萬不要等！',
 'Lq3':'原住民族幾歲可以申請長照？','La3':'原住民朋友55歲即符合長照申請資格，比一般民眾早整整10年。秀林鄉太魯閣族鄉親歡迎來電，我們熟悉申請流程，快速協助辦理。',
 'Lq4':'家裡有外籍看護，還需要長照服務嗎？','La4':'可以同時使用！外籍看護請假時，可以申請喘息服務讓我們的照服員來代班，雇主不用擔心空窗期。兩者並行，互不影響。',
-'Lq5':'補助之外自付費用大概多少？','La5':'一般家庭最多自付16%，中低收入戶5%，低收入戶只需0%。以月費5,000元計算，低收入戶每月只需付0元。歡迎來電免費試算。',
 
-'Lfmh':'預約免費諮詢回電','Lfms':'留下您的聯絡方式，我們在上班時間主動致電，不讓您等待',
-'Lfl1':'您的姓名','Lfl2':'聯絡電話','Lfl3':'居住地區','Lfl4':'想了解的服務（可不填）',
-'fi-name':'王小明','fi-tel':'09xx-xxx-xxx','fi-msg':'例如：居家服務、補助資格、費用試算…',
-'Lfo0':'請選擇','Lfo1':'花蓮縣 秀林鄉','Lfo2':'花蓮縣 壽豐鄉','Lfo3':'其他（請來電確認）',
-'Lfmbtn':'送出，等您來電 →','Lfmnote':'我們於上班時間（週一至週五）回電，個人資料僅用於本次諮詢',
-'Lfsuccess':'感謝您的預留資料！我們會在上班時間致電給您。<br>若有急迫需求，請直接加入 <strong>Line 官方帳號</strong>，我們能更快為您服務！',
+'LbigT':'懿芯辰居家長照機構','LbigS':'專業品質服務 · 長照最佳小幫手',
 
-'Lcth':'不知從何申請？讓我們幫您免費評估',
-'Lctp':'無論是想了解補助資格、費用試算，或是外籍看護請假需要代班，<br>都歡迎直接加入我們的 Line 官方帳號，由專人為您解答。',
+'Lcth':'不知從何申請？讓我們幫您免費評估','Lctp':'無論是想了解補助資格、費用試算，或是外籍看護請假需要代班，<br>都歡迎直接加入我們的 Line 官方帳號，由專人為您解答。',
 'LctaBtn':'點此加 Line 專人服務',
 'Lcttel1':'服務專線：03-8610668','Lcttel2':'假日緊急：0975-126-270',
 
@@ -766,7 +705,7 @@ en:{
 'Lh1':'Aging in place,<br><em>We share your caregiving burden</em>',
 'Ld':'Our 16-person local team provides professional home care, respite care, and short-term care in Xiulin and Shoufeng townships.',
 'Lb1b':'Check Eligibility →','LlineT':'Line Consult','Ltl':'Hotline: <strong>03-8610668</strong>','Ltel2':'Emergency: <strong>0975-126-270</strong>',
-'Ltr1':'Licensed','Ltr1s':'Hualien','Ltr2':'LTC 2.0','Ltr2s':'Subsidies apply','Ltr3':'Xiulin+Shoufeng','Ltr3s':'Local Area','Ltr4':'16-Person Team','Ltr4s':'Caregivers+Supervisors','Ltr5':'Multilingual','Ltr5s':'EN/VI/ID',
+'Ltr1':'Licensed','Ltr1s':'Hualien','Ltr2':'LTC 2.0','Ltr2s':'Subsidies','Ltr3':'Local Area','Ltr3s':'Xiulin/Shoufeng','Ltr4':'16-Person Team','Ltr4s':'Warm Care','Ltr5':'Multilingual','Ltr5s':'EN/VI/ID',
 
 'Lgh':'We are in Hualien, right by your side','Lgs':'From local markets to community centers, we serve every corner of Xiulin and Shoufeng.',
 'Lgc1':'Group photo with elders — the driving force of our service',
@@ -794,14 +733,14 @@ en:{
 'Ls2t':'Respite Care','Ls2d':'Relaxation time for family and foreign caregivers.',
 'Ls2ul':'<li>Relieve family caregiver stress</li><li>Cover for foreign caregiver\'s day off</li><li>Professional care guaranteed</li><li>Improve long-term caregiving quality</li>','Ls2tag':'LTC 2.0 subsidy eligible',
 'Ls3t':'Short-term Care','Ls3d':'Extended support when foreign caregivers are away.',
-'Ls3ul':'<li>When foreign caregiver\'s family visits</li><li>When foreign caregiver goes home for holidays</li><li>Intensive replacement care provided</li>','Ls3tag':'Assessed by case',
+'Ls3ul':'<li>When foreign caregiver\'s family visits Taiwan</li><li>When foreign caregiver goes home for holidays</li><li>Intensive replacement care provided</li>','Ls3tag':'Assessed by case',
 
 'Lch':'Costs: Highly Subsidized','Lcs':'Billed by service items, heavily subsidized based on income.',
-'Lci':'LTC 2.0 has <strong>3 subsidy tiers based on income</strong>. Lower income = less you pay. <strong>Maximum: 16%. Minimum: 0%.</strong>',
-'Lth1':'Category','Lth2':'Who qualifies','Lth3':'Gov Subsidy','Lth4':'You Pay',
-'Lc1n':'<strong>General (Cat. 1)</strong>','Lc1w':'General households<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">Not low-income</span>',
-'Lc2n':'<strong>Near-Low (Cat. 2)</strong>','Lc2w':'Near-low-income<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">Recognized</span>',
-'Lc3n':'<strong>Low Income (Cat. 3)</strong>','Lc3w':'Low-income<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">Recognized</span>','Lc3p':'0% (Free)',
+'Lci':'LTC 2.0 has <strong>3 subsidy tiers based on income</strong>. Lower income = less you pay. <strong>Maximum: 16%. Minimum: 5%. Low Income: 0%.</strong>',
+'Lth1':'Category','Lth3':'Gov Subsidy','Lth4':'You Pay',
+'Lc1n':'<strong>General (Cat. 1)</strong>',
+'Lc2n':'<strong>Near-Low (Cat. 2)</strong>',
+'Lc3n':'<strong>Low Income (Cat. 3)</strong>','Lc3p':'0% (Free)',
 'Lcn':'<strong>Cost Example:</strong><br>Bathing service (NT$325/time), 23 days a month (Total NT$7,475).<br><br>👉 <strong>General:</strong> Pay <strong>NT$1,196</strong>/month.<br>👉 <strong>Near-Low:</strong> Pay <strong>NT$373</strong>/month.<br>👉 <strong>Low Income:</strong> Pay <strong>NT$0</strong>.<br><span style="font-size:14px;color:#666;display:block;margin-top:8px">* Actual cost depends on the care plan.</span>',
 
 'Lth':'Our Professional Team','Lts':'Local caregivers who genuinely care',
@@ -817,7 +756,7 @@ en:{
 
 'Lph':'We Understand Your Concerns','Lps':'Many families share the same worries',
 'Lpq1':'"My parents refuse to let strangers in."','Lpa1l':'Our approach','Lpa1':'We join you for the first home visit to build trust gradually. No pressure.',
-'Lpq2':'"The LTC application is complicated."','Lpa2l':'Our approach','Lpa2':'One call is all it takes. We help you through every step of the paperwork.',
+'Lpq2':'"The application is complicated."','Lpa2l':'Our approach','Lpa2':'One call is all it takes. We help you through every step of the paperwork.',
 'Lpq3':'"I work away and can\'t come back often."','Lpa3l':'Our approach','Lpa3':'Our supervisors send regular updates so you always know your loved one\'s status.',
 
 'Lfh':'Four Simple Steps','Lfs':'From first call to first visit, we walk with you',
@@ -836,14 +775,8 @@ en:{
 'Lq2':'Hospitalized now, when can we apply?','La2':'Right now! Ask the nurse for a "Home Care Referral to Yi Xin Chen". This starts service 2x faster than waiting until discharge.',
 'Lq3':'At what age can indigenous people apply?','La3':'Indigenous residents can apply starting at age 55 (10 years earlier than general public).',
 'Lq4':'We have a foreign caregiver — do we still need LTC?','La4':'Yes! When your foreign caregiver takes leave, you can use our respite care. They don\'t conflict.',
-'Lq5':'How much do I actually pay?','La5':'General: max 16%. Near-low-income: 5%. Low-income: 0%. On NT$5,000/month, a low-income household pays NT$0. Call for an estimate.',
 
-'Lfmh':'Schedule a Free Callback','Lfms':'Leave your details and we\'ll call you during business hours',
-'Lfl1':'Your name','Lfl2':'Phone number','Lfl3':'Area of residence','Lfl4':'What do you need? (optional)',
-'fi-name':'John Doe','fi-tel':'09xx-xxx-xxx','fi-msg':'e.g., Home care, cost estimate...',
-'Lfo0':'Please select','Lfo1':'Xiulin Township','Lfo2':'Shoufeng Township','Lfo3':'Other (call to confirm)',
-'Lfmbtn':'Submit — we\'ll call you →','Lfmnote':'We call back during business hours. Your info is only used for this consultation.',
-'Lfsuccess':'Thank you! We\'ll call you during business hours.<br>For urgent needs, please add our <strong>Official Line</strong>.',
+'LbigT':'Yi Xin Chen Home Care','LbigS':'Professional Care · Your Best Helper',
 
 'Lcth':'Need Help Applying? Get a Free Assessment',
 'Lctp':'Contact us on Line for subsidy eligibility, cost estimation, or caregiver replacement services.',
@@ -861,26 +794,25 @@ en:{
 
 vi:{
 'Ln':'Trung Tâm Yi Xin Chen','Ls':'Được cấp phép · Xiulin & Shoufeng','Lnc':'Tư vấn miễn phí',
-'Lb1':'Được cấp phép','Lb2':'Đối tác LTC 2.0',
+'Lb1':'Được cấp phép Hualien','Lb2':'Đối tác LTC 2.0',
 'Lh1':'An hưởng tuổi già tại nhà,<br><em>Chúng tôi chia sẻ gánh nặng</em>',
 'Ld':'Đội ngũ 16 người của chúng tôi cung cấp chăm sóc tại nhà, dịch vụ nghỉ ngơi chuyên nghiệp tại Xiulin và Shoufeng.',
 'Lb1b':'Kiểm tra điều kiện →','LlineT':'Tư vấn Line','Ltl':'Hotline: <strong>03-8610668</strong>','Ltel2':'Khẩn cấp: <strong>0975-126-270</strong>',
-'Ltr1':'Cấp phép','Ltr1s':'Hualien','Ltr2':'Đối tác LTC 2.0','Ltr2s':'Có trợ cấp','Ltr3':'Xiulin+Shoufeng','Ltr3s':'Khu vực','Ltr4':'Đội 16 người','Ltr4s':'Chăm sóc tận tâm','Ltr5':'Đa ngôn ngữ','Ltr5s':'EN/VI/ID',
+'Ltr1':'Cấp phép','Ltr1s':'Hualien','Ltr2':'Đối tác LTC','Ltr2s':'Có trợ cấp','Ltr3':'Khu vực','Ltr3s':'Xiulin/Shoufeng','Ltr4':'Đội 16 người','Ltr4s':'Chuyên nghiệp','Ltr5':'Đa ngôn ngữ','Ltr5s':'VI/ID/EN/ZH',
 
-'Lgh':'Chúng tôi ở Hualien, ngay bên bạn','Lgs':'Từ chợ địa phương đến trung tâm cộng đồng, chúng tôi phục vụ mọi nơi.',
-'Lgc1':'Chụp ảnh cùng người cao tuổi','Lgc2':'Được hội người cao tuổi khen thưởng','Lgc3':'Quảng bá tại chợ địa phương',
-'Lgc4':'Đội ngũ năng động','Lgc5':'Tham gia các sự kiện cộng đồng','Lgc6':'Những câu chuyện từ bản làng',
+'Lgh':'Chúng tôi ở ngay bên bạn','Lgs':'Từ chợ địa phương đến trung tâm cộng đồng, chúng tôi phục vụ mọi nơi.',
+'Lgc1':'Chụp ảnh cùng người cao tuổi','Lgc2':'Được hội người cao tuổi khen thưởng','Lgc3':'Quảng bá tại chợ địa phương','Lgc4':'Đội ngũ năng động','Lgc5':'Sự kiện cộng đồng','Lgc6':'Câu chuyện bản làng',
 
 'Lsph':'Câu chuyện chăm sóc',
 'Lsp1':'"Bà Zhang từng rất ngại người lạ tắm cho. Sau 3 lần nhân viên Xiao Mei kiên nhẫn đến thăm, giờ bà mong chúng tôi đến mỗi ngày. Bà sạch sẽ và cười nhiều hơn."',
 'Lsp2':'— Giám sát chăm sóc',
 
-'LhospB':'<span class="urgent-em">Bệnh nhân nội trú</span> — Giới thiệu từ bệnh viện bắt đầu trong <span class="urgent-em">1 tuần</span>!',
+'LhospB':'<span class="urgent-em">Bệnh nhân nội trú</span> — Giới thiệu từ bệnh viện bắt đầu dịch vụ trong <span class="urgent-em">1 tuần</span>!',
 'LhospH':'Đang nằm viện? Đăng ký ngay!','LhospS':'Đăng ký ngay tại bệnh viện để được chăm sóc ngay khi về nhà.',
 'Lhc1tag':'Khuyên dùng','Lhc1rt':'Từ bệnh viện','Lhc1tm':'Khoảng 1 tuần','Lhc1nt':'Y tá bệnh viện hỗ trợ. Dịch vụ bắt đầu nhanh nhất.','Lhc1br':'Xuất viện → Chăm sóc ngay',
 'Lhc2tag':'Thông thường','Lhc2rt':'Từ cộng đồng','Lhc2tm':'Hơn 2 tuần','Lhc2nt':'Chờ đợi lâu gây áp lực cho gia đình.','Lhc2br':'Xuất viện → Chờ đợi → Chăm sóc',
-'LhospP':'Yêu cầu y tá <strong>giới thiệu đến Trung tâm Yi Xin Chen</strong> trong thời gian nằm viện để dịch vụ được kích hoạt nhanh nhất.',
-'LhsT':'🏥 3 Bước giới thiệu',
+'LhospP':'Yêu cầu y tá giới thiệu đến <strong>Trung tâm Yi Xin Chen</strong> trong thời gian nằm viện để dịch vụ được kích hoạt nhanh nhất.',
+'LhsT':'🏥 3 Bước giới thiệu từ bệnh viện',
 'Lhst1':'Bước 1: Nói với y tá','Lhsd1':'"Tôi muốn đăng ký chăm sóc tại nhà sau xuất viện."','Lhstp1':'Làm ngay khi đang nằm viện',
 'Lhst2':'Bước 2: Chỉ định Yi Xin Chen','Lhsd2':'Nói: "Xin giới thiệu đến Trung tâm Yi Xin Chen."','Lhstp2':'Số điện thoại: 03-8610668',
 'Lhst3':'Bước 3: Bắt đầu dịch vụ','Lhsd3':'Chúng tôi sẽ liên hệ ngay để sắp xếp người chăm sóc.','Lhstp3':'Không còn lo lắng khi xuất viện',
@@ -890,43 +822,43 @@ vi:{
 'Ls1t':'Chăm sóc tại nhà','Ls1d':'Duy trì vệ sinh và tôn nghiêm tại nhà.',
 'Ls1ul':'<li>Tắm rửa & Vệ sinh</li><li>Bữa ăn & Nhắc uống thuốc</li><li>Hỗ trợ thay đổi tư thế</li><li>Đồng hành khám bệnh</li>','Ls1tag':'Trợ cấp LTC 2.0',
 'Ls2t':'Dịch vụ nghỉ ngơi','Ls2d':'Thời gian thư giãn cho gia đình và người giúp việc.',
-'Ls2ul':'<li>Giảm căng thẳng cho gia đình</li><li>Thay thế người giúp việc vào ngày nghỉ</li><li>Đảm bảo chăm sóc chuyên nghiệp</li><li>Nâng cao chất lượng chăm sóc</li>','Ls2tag':'Trợ cấp LTC 2.0',
+'Ls2ul':'<li>Giảm căng thẳng cho gia đình</li><li>Thay thế người giúp việc ngày nghỉ</li><li>Đảm bảo chăm sóc chuyên nghiệp</li><li>Nâng cao chất lượng chăm sóc</li>','Ls2tag':'Trợ cấp LTC 2.0',
 'Ls3t':'Chăm sóc ngắn hạn','Ls3d':'Hỗ trợ mở rộng khi người giúp việc đi vắng.',
-'Ls3ul':'<li>Khi người giúp việc có gia đình sang thăm</li><li>Khi người giúp việc về nước nghỉ lễ</li><li>Cung cấp chăm sóc thay thế</li>','Ls3tag':'Đánh giá theo ca',
+'Ls3ul':'<li>Khi người giúp việc có gia đình sang thăm</li><li>Khi người giúp việc về nước dịp lễ</li><li>Cung cấp chăm sóc thay thế</li>','Ls3tag':'Đánh giá theo ca',
 
-'Lch':'Chi phí: Trợ cấp cao','Lcs':'Trợ cấp chính phủ trả phần lớn chi phí.',
-'Lci':'LTC 2.0 có <strong>3 mức trợ cấp theo thu nhập</strong>. <strong>Tối đa tự trả: 16%. Tối thiểu: 0%.</strong>',
-'Lth1':'Loại','Lth2':'Đối tượng','Lth3':'Trợ cấp','Lth4':'Bạn trả',
-'Lc1n':'<strong>Loại 1</strong>','Lc1w':'Hộ thông thường<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">Không thuộc hộ nghèo</span>',
-'Lc2n':'<strong>Loại 2</strong>','Lc2w':'Hộ cận nghèo<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">Có giấy chứng nhận</span>',
-'Lc3n':'<strong>Loại 3</strong>','Lc3w':'Hộ nghèo<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">Có giấy chứng nhận</span>','Lc3p':'0% (Miễn phí)',
-'Lcn':'<strong>Ví dụ:</strong> Phí 5.000 TWD/tháng. Hộ thông thường trả <strong>1.196 TWD</strong>. Cận nghèo trả <strong>373 TWD</strong>. Hộ nghèo trả <strong>0 TWD</strong>.',
+'Lch':'Chi phí: Trợ cấp cao','Lcs':'Tính phí theo hạng mục, trợ cấp dựa trên thu nhập.',
+'Lci':'LTC 2.0 có <strong>3 mức trợ cấp</strong>. <strong>Tối đa tự trả: 16%. Tối thiểu: 5%. Hộ nghèo: 0%.</strong>',
+'Lth1':'Loại','Lth3':'Trợ cấp','Lth4':'Bạn trả',
+'Lc1n':'<strong>Thông thường (Loại 1)</strong>',
+'Lc2n':'<strong>Cận nghèo (Loại 2)</strong>',
+'Lc3n':'<strong>Hộ nghèo (Loại 3)</strong>','Lc3p':'0% (Miễn phí)',
+'Lcn':'<strong>Ví dụ:</strong> Tắm 23 ngày/tháng. 👉 Thông thường <strong>$1.196</strong>. 👉 Cận nghèo <strong>$373</strong>. 👉 Hộ nghèo <strong>$0</strong>.',
 
 'Lth':'Đội Ngũ Chuyên Nghiệp','Lts':'Những người chăm sóc địa phương tận tâm',
-'Ltm1':'nhân viên','Ltm1s':'2 người học điều dưỡng','Ltm2':'giám sát','Ltm2s':'Đảm bảo chất lượng','Ltm3':'Có chứng chỉ','Ltm3s':'Chứng nhận chính phủ',
+'Ltm1':'nhân viên chăm sóc','Ltm1s':'2 người học điều dưỡng','Ltm2':'giám sát','Ltm2s':'Đảm bảo chất lượng','Ltm3':'Có chứng chỉ','Ltm3s':'Chứng nhận chính phủ',
 'Ltv1t':'Chứng chỉ hợp lệ','Ltv1d':'Tất cả nhân viên đều có chứng chỉ đào tạo chính phủ',
 'Ltv2t':'Đào tạo liên tục','Ltv2d':'Cập nhật tiêu chuẩn chăm sóc mới nhất',
 'Ltv3t':'Nhân viên cố định','Ltv3d':'Tạo sự quen thuộc và tin tưởng',
 'Ltv4t':'Cập nhật thường xuyên','Ltv4d':'Giám sát báo cáo cho gia đình an tâm',
 
-'Lfwh':'Người giúp việc nước ngoài','Lfws':'Cần nghỉ phép nhưng lo người già không ai chăm? Chúng tôi có giải pháp',
-'Lfwt':'💡 LTC 2.0 có thể giúp chủ nhà',
+'Lfwh':'Dành cho người giúp việc','Lfws':'Khi bạn nghỉ phép, có giải pháp trợ giúp từ chính phủ',
+'Lfwt':'💡 LTC 2.0 hỗ trợ chủ nhà của bạn',
 'Lfwn':'Hãy báo cho chủ nhà hoặc nhờ họ gọi chúng tôi. Chúng tôi sẽ lo mọi thủ tục bằng tiếng Trung.',
 
 'Lph':'Chúng Tôi Hiểu Nỗi Lo Của Bạn','Lps':'Nhiều gia đình cũng lo lắng như vậy',
 'Lpq1':'"Bố mẹ không muốn người lạ vào nhà."','Lpa1l':'Giải pháp của chúng tôi','Lpa1':'Chúng tôi đến thăm cùng bạn trước để làm quen từ từ. Không ép buộc.',
-'Lpq2':'"Thủ tục quá phức tạp."','Lpa2l':'Giải pháp của chúng tôi','Lpa2':'Chỉ cần gọi, chúng tôi hỗ trợ toàn bộ quy trình giấy tờ.',
-'Lpq3':'"Tôi làm việc ở xa."','Lpa3l':'Giải pháp của chúng tôi','Lpa3':'Chúng tôi cập nhật tình hình thường xuyên để bạn yên tâm.',
+'Lpq2':'"Thủ tục quá phức tạp."','Lpa2l':'Giải pháp','Lpa2':'Chỉ cần gọi, chúng tôi hỗ trợ toàn bộ quy trình giấy tờ.',
+'Lpq3':'"Tôi làm việc ở xa."','Lpa3l':'Giải pháp','Lpa3':'Chúng tôi cập nhật tình hình thường xuyên để bạn yên tâm.',
 
 'Lfh':'Bốn Bước Đơn Giản','Lfs':'Chúng tôi đồng hành cùng bạn',
 'Lf1t':'Liên hệ','Lf1d':'Tư vấn miễn phí qua Line/Điện thoại',
 'Lf2t':'Đăng ký','Lf2d':'Hỗ trợ nộp đơn',
-'Lf3t':'Đánh giá','Lf3d':'Chuyên viên đến nhà lập kế hoạch',
+'Lf3t':'Đánh giá','Lf3d':'Chuyên viên đến nhà',
 'Lf4t':'Bắt đầu','Lf4d':'Bố trí nhân viên cố định',
 
 'Lah':'Khu Vực Phục Vụ','Las':'Chỉ cần người thân sống trong khu vực này',
 'Lat':'📍 Khu vực phục vụ','Lap1':'Huyện Xiulin','Lap2':'Huyện Shoufeng',
-'Lan':'Bao gồm Fushi, Chongde, Heping, Shoufeng... Địa chỉ đăng ký ở nơi khác cũng được.',
+'Lan':'Đăng ký hộ khẩu ở nơi khác cũng được.',
 'Lmb':'Xem trên Google Maps',
 
 'Lqh':'Câu Hỏi Thường Gặp','Lqs':'Những câu hỏi phổ biến nhất',
@@ -934,17 +866,10 @@ vi:{
 'Lq2':'Đang nằm viện, khi nào đăng ký được?','La2':'Ngay bây giờ! Hãy yêu cầu y tá giới thiệu ngay để dịch vụ bắt đầu nhanh gấp đôi.',
 'Lq3':'Người bản địa đủ điều kiện từ mấy tuổi?','La3':'Từ 55 tuổi — sớm hơn 10 năm so với người bình thường.',
 'Lq4':'Nhà có người giúp việc — có cần LTC không?','La4':'Có thể dùng song song! Dùng khi người giúp việc nghỉ phép.',
-'Lq5':'Chi phí phải trả là bao nhiêu?','La5':'Thông thường tối đa 16%, cận nghèo 5%, nghèo 0%. Với phí 5.000 TWD, hộ nghèo trả 0 TWD.',
 
-'Lfmh':'Đặt Lịch Tư Vấn Miễn Phí','Lfms':'Để lại thông tin, chúng tôi gọi lại trong giờ làm việc',
-'Lfl1':'Họ tên','Lfl2':'Số điện thoại','Lfl3':'Khu vực sinh sống','Lfl4':'Bạn muốn biết gì? (không bắt buộc)',
-'fi-name':'Họ và tên','fi-tel':'09xx-xxx-xxx','fi-msg':'Ví dụ: Chi phí, cách đăng ký...',
-'Lfo0':'Vui lòng chọn','Lfo1':'Huyện Xiulin','Lfo2':'Huyện Shoufeng','Lfo3':'Khác',
-'Lfmbtn':'Gửi — chúng tôi sẽ gọi lại →','Lfmnote':'Chúng tôi gọi lại trong giờ hành chính.',
-'Lfsuccess':'Cảm ơn bạn! Chúng tôi sẽ gọi lại trong giờ làm việc.<br>Trường hợp khẩn, vui lòng kết bạn <strong>Line chính thức</strong>.',
+'LbigT':'Trung Tâm Yi Xin Chen','LbigS':'Chăm sóc chuyên nghiệp · Trợ thủ đắc lực của bạn',
 
-'Lcth':'Đánh Giá Cần Hỗ Trợ Đăng Ký Miễn Phí',
-'Lctp':'Liên hệ với chúng tôi qua Line để biết điều kiện trợ cấp, ước tính chi phí.',
+'Lcth':'Cần hỗ trợ đánh giá miễn phí?','Lctp':'Liên hệ với chúng tôi qua Line để biết điều kiện trợ cấp, ước tính chi phí.',
 'LctaBtn':'Thêm Line để tư vấn',
 'Lcttel1':'Hotline: 03-8610668','Lcttel2':'Khẩn cấp: 0975-126-270',
 
@@ -959,19 +884,18 @@ vi:{
 
 id:{
 'Ln':'Lembaga Yi Xin Chen','Ls':'Berizin · Xiulin & Shoufeng','Lnc':'Konsultasi Gratis',
-'Lb1':'Berizin Hualien','Lb2':'Mitra LTC 2.0',
-'Lh1':'Biarkan keluarga tetap di rumah —<br><em>biarkan kami merawat bersama</em>',
-'Ld':'Tim 16 orang kami menyediakan perawatan rumahan, istirahat pengasuh, dan perawatan jangka pendek di Xiulin dan Shoufeng.',
-'Lb1b':'Cek Kelayakan →','LlineT':'Chat di Line','Ltl':'Telepon: <strong>03-8610668</strong>','Ltel2':'Darurat: <strong>0975-126-270</strong>',
-'Ltr1':'Berizin Resmi','Ltr1s':'Kab. Hualien','Ltr2':'Mitra LTC 2.0','Ltr2s':'Subsidi berlaku','Ltr3':'Xiulin+Shoufeng','Ltr3s':'Tim lokal','Ltr4':'Tim 16 orang','Ltr4s':'Petugas + pengawas','Ltr5':'Multibahasa','Ltr5s':'EN/VI/ID',
+'Lb1':'Berizin Resmi','Lb2':'Mitra LTC 2.0',
+'Lh1':'Menua di rumah,<br><em>Kami berbagi beban perawatan</em>',
+'Ld':'Tim lokal 16 orang kami menyediakan perawatan profesional di rumah dan layanan istirahat di Xiulin dan Shoufeng.',
+'Lb1b':'Cek Kelayakan →','LlineT':'Konsultasi Line','Ltl':'Hotline: <strong>03-8610668</strong>','Ltel2':'Darurat: <strong>0975-126-270</strong>',
+'Ltr1':'Berizin','Ltr1s':'Hualien','Ltr2':'LTC 2.0','Ltr2s':'Ada Subsidi','Ltr3':'Area Lokal','Ltr3s':'Xiulin/Shoufeng','Ltr4':'Tim 16 Orang','Ltr4s':'Perawatan Hangat','Ltr5':'Multibahasa','Ltr5s':'ID/VI/EN/ZH',
 
 'Lgh':'Kami hadir di Hualien, di sisi Anda','Lgs':'Dari pasar lokal hingga pusat komunitas, kami melayani setiap sudut.',
 'Lgc1':'Foto bersama lansia — semangat layanan kami',
-'Lgc2':'Penghargaan dari Asosiasi Lansia','Lgc3':'Promosi di pasar lokal',
-'Lgc4':'Tim yang energik','Lgc5':'Terlibat dalam acara komunitas','Lgc6':'Kisah nyata dari penduduk lokal',
+'Lgc2':'Penghargaan dari Asosiasi Lansia','Lgc3':'Promosi di pasar lokal','Lgc4':'Tim yang energik','Lgc5':'Terlibat dalam acara komunitas','Lgc6':'Kisah nyata dari penduduk lokal',
 
 'Lsph':'Cerita Perawatan Nyata',
-'Lsp1':'"Nenek Zhang awalnya menolak dimandikan orang asing. Setelah 3 kunjungan sabar dari petugas Xiao Mei, kini ia tersenyum dan bersih."',
+'Lsp1':'"Nenek Zhang awalnya menolak dimandikan orang asing. Setelah 3 kunjungan sabar dari petugas kami Xiao Mei, kini ia menantikan kedatangan kami setiap hari. Ia bersih dan lebih sering tersenyum."',
 'Lsp2':'— Pengawas Perawatan',
 
 'LhospB':'<span class="urgent-em">Pasien Rawat Inap</span> — Rujukan rumah sakit memulai layanan dalam <span class="urgent-em">1 minggu</span>!',
@@ -979,7 +903,7 @@ id:{
 'Lhc1tag':'Disarankan','Lhc1rt':'Rujukan RS','Lhc1tm':'~1 Minggu','Lhc1nt':'Proses tercepat dibantu perawat rumah sakit.','Lhc1br':'Keluar RS → Langsung dirawat',
 'Lhc2tag':'Umum','Lhc2rt':'Rujukan Komunitas','Lhc2tm':'Lebih 2 Minggu','Lhc2nt':'Mendaftar setelah pulang membuat keluarga stres menunggu.','Lhc2br':'Keluar RS → Menunggu → Layanan',
 'LhospP':'Minta perawat untuk <strong>merujuk ke Yi Xin Chen</strong> selama Anda dirawat untuk aktivasi layanan tercepat.',
-'LhsT':'🏥 3 Langkah Rujukan',
+'LhsT':'🏥 3 Langkah Rujukan Rumah Sakit',
 'Lhst1':'Langkah 1: Beritahu perawat','Lhsd1':'"Saya ingin daftar perawatan di rumah."','Lhstp1':'Lakukan saat masih dirawat',
 'Lhst2':'Langkah 2: Pilih Yi Xin Chen','Lhsd2':'Katakan: "Mohon rujuk ke Lembaga Yi Xin Chen."','Lhstp2':'Sebutkan nomor kami: 03-8610668',
 'Lhst3':'Langkah 3: Layanan Cepat','Lhsd3':'Kami akan mengatur petugas segera setelah pasien pulang.','Lhstp3':'Tidak ada kekhawatiran saat pulang',
@@ -987,19 +911,19 @@ id:{
 
 'Lsh':'3 Layanan Profesional','Lss':'Solusi khusus untuk kebutuhan keluarga.',
 'Ls1t':'Perawatan Rumah','Ls1d':'Menjaga kebersihan dan martabat di rumah.',
-'Ls1ul':'<li>Mandi & Kebersihan diri</li><li>Makan & Ingatkan Obat</li><li>Mengubah posisi</li><li>Mendampingi ke dokter</li>','Ls1tag':'Subsidi LTC 2.0',
+'Ls1ul':'<li>Mandi & Toilet</li><li>Makan & Ingatkan Obat</li><li>Mengubah posisi</li><li>Pendampingan Medis</li>','Ls1tag':'Subsidi LTC 2.0',
 'Ls2t':'Layanan Istirahat','Ls2d':'Waktu istirahat untuk keluarga dan pengasuh.',
-'Ls2ul':'<li>Mengurangi stres keluarga</li><li>Menggantikan hari libur pengasuh asing</li><li>Perawatan terjamin</li><li>Meningkatkan kualitas perawatan</li>','Ls2tag':'Subsidi LTC 2.0',
+'Ls2ul':'<li>Mengurangi stres pengasuh</li><li>Menggantikan hari libur pengasuh asing</li><li>Perawatan profesional terjamin</li><li>Meningkatkan kualitas perawatan</li>','Ls2tag':'Subsidi LTC 2.0',
 'Ls3t':'Perawatan Jangka Pendek','Ls3d':'Dukungan saat pengasuh asing pulang.',
 'Ls3ul':'<li>Saat keluarga pengasuh datang</li><li>Saat pengasuh pulang kampung</li><li>Perawatan pengganti intensif</li>','Ls3tag':'Evaluasi per kasus',
 
-'Lch':'Biaya: Disubsidi Tinggi','Lcs':'Subsidi pemerintah menanggung sebagian besar biaya.',
-'Lci':'LTC 2.0 punya <strong>3 tingkatan subsidi</strong>. Semakin rendah pendapatan, semakin besar subsidi. <strong>Maksimal bayar: 16%. Minimal: 0%.</strong>',
-'Lth1':'Kategori','Lth2':'Yang memenuhi syarat','Lth3':'Subsidi','Lth4':'Anda bayar',
-'Lc1n':'<strong>Kat. 1</strong>','Lc1w':'Rumah tangga umum<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">Bukan keluarga miskin</span>',
-'Lc2n':'<strong>Kat. 2</strong>','Lc2w':'Hampir miskin<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">Sertifikat resmi</span>',
-'Lc3n':'<strong>Kat. 3</strong>','Lc3w':'Keluarga miskin<br><span style="font-size:var(--fss);color:var(--color-text-secondary)">Sertifikat resmi</span>','Lc3p':'0% (Gratis)',
-'Lcn':'<strong>Contoh:</strong> Biaya NT$5.000/bulan. Umum bayar <strong>NT$1.196</strong>. Hampir miskin <strong>NT$373</strong>. Keluarga miskin bayar <strong>NT$0</strong>.',
+'Lch':'Biaya: Disubsidi Tinggi','Lcs':'Ditagih per item layanan, disubsidi berdasarkan pendapatan.',
+'Lci':'LTC 2.0 punya <strong>3 tingkatan subsidi berdasarkan pendapatan</strong>. Semakin rendah pendapatan, semakin besar subsidi. <strong>Maksimal: 16%. Minimal: 5%. Miskin: 0%.</strong>',
+'Lth1':'Kategori','Lth3':'Subsidi','Lth4':'Anda Bayar',
+'Lc1n':'<strong>Umum (Kat. 1)</strong>',
+'Lc2n':'<strong>Menengah ke Bawah (Kat. 2)</strong>',
+'Lc3n':'<strong>Kurang Mampu (Kat. 3)</strong>','Lc3p':'0% (Gratis)',
+'Lcn':'<strong>Contoh Biaya:</strong><br>Layanan mandi (NT$325/kali), 23 hari sebulan. 👉 Umum: <strong>NT$1.196</strong>. 👉 Menengah ke Bawah: <strong>NT$373</strong>. 👉 Kurang Mampu: <strong>NT$0</strong>.',
 
 'Lth':'Tim Profesional Kami','Lts':'Petugas lokal yang peduli',
 'Ltm1':'Petugas','Ltm1s':'2 latar perawat','Ltm2':'Pengawas','Ltm2s':'Jaminan kualitas','Ltm3':'Bersertifikat','Ltm3s':'Sertifikat pemerintah',
@@ -1033,21 +957,15 @@ id:{
 'Lq2':'Lagi dirawat di RS, kapan bisa daftar?','La2':'Sekarang! Minta rujukan dari RS agar layanan 2x lebih cepat.',
 'Lq3':'Usia berapa warga adat bisa daftar?','La3':'Mulai usia 55 tahun — 10 tahun lebih awal dari warga biasa.',
 'Lq4':'Ada pengasuh asing — masih perlu LTC?','La4':'Bisa dipakai bersamaan! Sangat berguna saat pengasuh asing cuti.',
-'Lq5':'Berapa biaya sendiri yang harus dibayar?','La5':'Umum maks 16%, hampir miskin 5%, miskin 0%. Dengan biaya 5.000, keluarga miskin bayar 0.',
 
-'Lfmh':'Jadwalkan Konsultasi Gratis','Lfms':'Tinggalkan info Anda, kami menelepon balik di jam kerja',
-'Lfl1':'Nama Anda','Lfl2':'Nomor telepon','Lfl3':'Area tempat tinggal','Lfl4':'Ingin tahu apa? (opsional)',
-'fi-name':'Nama lengkap','fi-tel':'09xx-xxx-xxx','fi-msg':'Contoh: Info biaya...',
-'Lfo0':'Silakan pilih','Lfo1':'Kec. Xiulin','Lfo2':'Kec. Shoufeng','Lfo3':'Lain-lain',
-'Lfmbtn':'Kirim — kami telepon →','Lfmnote':'Kami menelepon balik di jam kerja. Info dijaga kerahasiaannya.',
-'Lfsuccess':'Terima kasih! Kami akan menelepon di jam kerja.<br>Untuk hal mendesak, silakan tambahkan <strong>Line Resmi</strong> kami.',
+'LbigT':'Lembaga Yi Xin Chen','LbigS':'Perawatan Profesional · Asisten Terbaik Anda',
 
 'Lcth':'Butuh Bantuan Mendaftar? Penilaian Gratis',
 'Lctp':'Hubungi kami di Line untuk kelayakan subsidi atau layanan pengganti pengasuh.',
 'LctaBtn':'Tambah Line untuk Layanan',
 'Lcttel1':'Telepon: 03-8610668','Lcttel2':'Darurat: 0975-126-270',
 
-'Lcoh':'Hubungi Yi Xin Chen','Lcos':'Telepon, Line atau kunjungi langsung',
+'Lcoh':'Hubungi Kami','Lcos':'Telepon, Line atau kunjungi langsung',
 'Lcl1':'Telepon','Lcs1':'Senin–Jumat, jam kerja','Lcl2':'Ponsel','Lcs2':'Akhir pekan & darurat','Lcl3':'Alamat','Lcs3':'Kunjungan dengan perjanjian',
 'Llineadd':'Tambah teman Line','Lfb':'Halaman Facebook',
 'LfootC':'© Lembaga Perawatan Yi Xin Chen',
@@ -1063,17 +981,7 @@ function setLang(l){
   const t=T[l];
   for(const[id,val]of Object.entries(t)){
     const el=document.getElementById(id);
-    if(el){
-      if(el.tagName === 'INPUT' || el.tagName === 'TEXTAREA'){
-        if(el.type === 'text' || el.type === 'tel') {
-          el.placeholder = val;
-        } else {
-          el.value = val;
-        }
-      } else {
-        el.innerHTML = val;
-      }
-    }
+    if(el)el.innerHTML=val;
   }
 }
 </script>
