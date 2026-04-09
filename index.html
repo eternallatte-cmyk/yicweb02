@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>懿芯辰居家長照機構 | 花蓮秀林鄉在地服務</title>
+
+<meta name="description" content="懿芯辰居家長照機構提供花蓮縣秀林鄉、壽豐鄉居家服務、喘息服務與短照服務。由16人專業團隊提供在地暖心照顧，政府立案、長照3.0特約機構，補助最高100%。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="懿芯辰居家長照機構">
+<meta property="og:title" content="懿芯辰居家長照機構 | 花蓮在地照顧的最佳夥伴">
+<meta property="og:description" content="讓家人留在家裡，照顧有人陪您一起扛。提供居家、喘息、短照三合一專業服務。由16人專業團隊提供在地暖心照顧。">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -14,6 +23,7 @@
   --r600:#A32D2D;
   --fs:18px;--fsm:16px;--fss:14px;--fsh1:28px;--fsh2:22px;--fsh3:20px;
 }
+html { scroll-behavior: smooth; }
 body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f9;font-size:var(--fs);color:#333}
 .site{max-width:880px;margin:0 auto;background:#fff;box-shadow:0 0 20px rgba(0,0,0,0.05)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
@@ -21,9 +31,13 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 /* NAV */
 .nav{padding:10px 20px;border-bottom:1px solid #eaeaea;display:flex;align-items:center;justify-content:space-between;background:#fff;position:sticky;top:0;z-index:20;gap:8px;flex-wrap:wrap}
 .logo-wrap{display:flex;align-items:center;gap:12px}
-.logo-img{width:45px;height:auto;object-fit:contain}
+.logo-img{height:45px;width:auto;object-fit:contain}
+.logo-1966{height:36px;width:auto;object-fit:contain;margin-left:4px}
 .logo-t{font-size:16px;font-weight:600;color:#222;line-height:1.3}
 .logo-t small{font-size:var(--fss);color:#666;font-weight:400;display:block}
+.nav-links{display:flex;gap:15px;margin:0 10px}
+.nav-links a{text-decoration:none;color:#555;font-size:var(--fsm);font-weight:500;transition:0.2s}
+.nav-links a:hover{color:var(--g600)}
 .nav-r{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .lang-btns{display:flex;gap:4px}
 .lb{background:transparent;border:1px solid #ddd;padding:5px 10px;border-radius:14px;font-size:var(--fss);cursor:pointer;color:#555;transition:0.2s}
@@ -43,7 +57,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .btn-m{background:var(--g600);color:#fff;border:none;padding:13px 22px;border-radius:22px;font-size:var(--fs);font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
 .btn-line{background:#06C755;color:#fff;border:none;padding:11px 20px;border-radius:22px;font-size:var(--fs);font-weight:600;display:inline-flex;align-items:center;gap:8px;text-decoration:none;box-shadow:0 2px 8px rgba(6,199,85,0.2)}
 .tel-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.tel-i{font-size:var(--fsm);color:#555}
+.tel-i{font-size:var(--fsm);color:#555;text-decoration:none}
 .tel-i strong{color:#222;font-size:20px;font-weight:600}
 
 /* TRUST */
@@ -62,11 +76,11 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .sh{font-size:var(--fsh2);font-weight:600;color:#222;margin-bottom:8px}
 .ss{font-size:var(--fs);color:#555;line-height:1.75;margin-bottom:24px}
 
-/* GALLERY & STORIES */
+/* GALLERY & STORIES (無縫網格排版) */
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
 .gallery-item{border-radius:12px;overflow:hidden;position:relative;aspect-ratio:4/3;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
 .gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
-.gallery-item.wide{grid-column:span 2}
+.gallery-item.wide{grid-column:span 2; grid-row:span 2; aspect-ratio:auto;}
 .gallery-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.75));padding:12px 12px 8px}
 .gallery-caption p{font-size:var(--fss);color:#fff;line-height:1.4;font-weight:500;text-shadow: 1px 1px 2px rgba(0,0,0,0.5)}
 .sp-box{background:#fff;border:1px solid var(--w100);border-radius:12px;padding:20px;position:relative;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
@@ -145,6 +159,27 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .tv-t{font-size:var(--fs);font-weight:600;color:#222;margin-bottom:4px}
 .tv-d{font-size:var(--fsm);color:#555;line-height:1.6}
 
+/* WHY US - 4 COMMITMENTS */
+.adv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
+.adv-card { background: #fff; border: 1px solid #eaeaea; border-top: 4px solid var(--g600); border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.adv-ico { font-size: 32px; margin-bottom: 12px; }
+.adv-t { font-size: var(--fsh3); font-weight: 600; color: #222; margin-bottom: 12px; line-height: 1.4; }
+.adv-d { font-size: var(--fsm); color: #555; line-height: 1.7; }
+.adv-d strong { color: var(--g800); display: block; margin-top: 8px; font-weight: 600; }
+.adv-d strong:first-child { margin-top: 0; }
+
+/* TIMELINE (Pixel-Perfect Aligned) */
+.timeline-wrap { background: #fff; border: 1px solid #eaeaea; border-radius: 12px; padding: 32px 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-top: 16px; }
+.timeline { position: relative; max-width: 600px; margin: 0 auto; padding-left: 32px; }
+.timeline::before { content: ''; position: absolute; top: 8px; left: 10px; bottom: 8px; width: 4px; background: var(--g100); border-radius: 2px; }
+.tl-item { position: relative; margin-bottom: 28px; }
+.tl-item:last-child { margin-bottom: 0; }
+.tl-item::before { content: ''; position: absolute; left: -32px; top: 4px; width: 16px; height: 16px; background: var(--g600); border: 4px solid #fff; border-radius: 50%; box-shadow: 0 0 0 2px var(--g100); z-index: 2; }
+.tl-year { font-size: var(--fsm); color: var(--g600); font-weight: 700; margin-bottom: 6px; letter-spacing: 0.05em; }
+.tl-content { background: var(--g50); padding: 16px 20px; border-radius: 12px; border-left: 4px solid var(--g600); }
+.tl-t { font-size: var(--fs); font-weight: 600; color: var(--g800); margin-bottom: 6px; }
+.tl-d { font-size: var(--fsm); color: #444; line-height: 1.6; }
+
 /* FOREIGN INFO */
 .fw-box{background:#fff;border:1px solid #eaeaea;border-radius:12px;padding:24px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
 .fw-title{font-size:var(--fsh3);font-weight:600;color:var(--b800);margin-bottom:16px}
@@ -174,11 +209,16 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .area-pill{background:var(--g50);color:var(--g800);font-size:var(--fs);padding:8px 18px;border-radius:20px;font-weight:600;border:1px solid var(--g100)}
 .map-link-btn{display:inline-flex;align-items:center;gap:8px;background:var(--g600);color:#fff;padding:12px 20px;border-radius:24px;font-size:var(--fsm);font-weight:600;text-decoration:none;margin-top:12px;box-shadow:0 4px 10px rgba(46,125,82,0.2)}
 
-/* FAQ */
-.fq-item{padding:20px 0;border-bottom:1px solid #eaeaea}
-.fq-q{font-size:var(--fs);font-weight:600;color:#222;margin-bottom:8px;padding-left:26px;position:relative}
-.fq-q:before{content:"Q";position:absolute;left:0;color:var(--g600);font-weight:600;font-size:var(--fs);top:0}
-.fq-a{font-size:var(--fs);color:#555;line-height:1.8;padding-left:26px;position:relative}
+/* FAQ Accordion */
+.fq-item{border-bottom:1px solid #eaeaea;overflow:hidden}
+.fq-q{font-size:var(--fs);font-weight:600;color:#222;padding:20px 40px 20px 26px;position:relative;cursor:pointer;background:#fff;transition:0.3s}
+.fq-q:hover{background:#fafafa}
+.fq-q:before{content:"Q";position:absolute;left:0;color:var(--g600);font-weight:600;font-size:var(--fs);top:20px}
+.fq-q:after{content:"▼";position:absolute;right:15px;top:22px;font-size:12px;color:#ccc;transition:0.3s}
+.fq-q.active:after{transform:rotate(180deg);color:var(--g600)}
+
+.fq-a{font-size:var(--fs);color:#555;line-height:1.8;padding:0 26px 0 26px;position:relative;max-height:0;transition:all 0.4s ease-out;opacity:0}
+.fq-a.active{padding:0 26px 20px 26px;max-height:500px;opacity:1}
 .fq-a:before{content:"A";position:absolute;left:0;color:var(--w600);font-weight:600;font-size:var(--fs);top:0}
 
 /* CTA */
@@ -187,18 +227,18 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .cta p{font-size:var(--fs);color:rgba(255,255,255,.9);margin-bottom:24px;line-height:1.75}
 .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
 .cta-w{background:#fff;color:var(--g600);border:none;padding:14px 24px;border-radius:24px;font-size:var(--fs);font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
-.cta-tel{font-size:var(--fs);color:rgba(255,255,255,.9);line-height:1.6}
+.cta-tel{font-size:var(--fs);color:rgba(255,255,255,.9);line-height:1.6;text-decoration:none}
 
 /* CONTACT & BIG LOGO */
 .con-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .con-c{background:#fff;border:1px solid #eaeaea;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
 .con-l{font-size:var(--fss);color:#888;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
-.con-v{font-size:var(--fs);font-weight:600;color:#222;line-height:1.5}
+.con-v{font-size:var(--fs);font-weight:600;color:#222;line-height:1.5;text-decoration:none}
 .con-s{font-size:var(--fsm);color:#555;margin-top:4px;line-height:1.5}
 .line-add-btn{display:inline-flex;align-items:center;gap:8px;background:#06C755;color:#fff;padding:10px 18px;border-radius:20px;font-size:var(--fsm);font-weight:600;text-decoration:none;margin-top:10px}
 
 .big-logo-sec{text-align:center;padding:48px 24px;background:#fff;border-top:1px solid #eaeaea}
-.big-logo-img{max-width:260px;width:100%;height:auto;margin-bottom:16px}
+.big-logo-img{width:100%;height:auto;margin-bottom:0}
 .big-logo-t{font-size:24px;font-weight:600;color:var(--g800);margin-bottom:8px}
 .big-logo-s{font-size:16px;color:#666;letter-spacing:0.1em}
 
@@ -210,12 +250,16 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .soc-line{color:#06C755;border-color:#06C755}
 .line-svg{width:18px;height:18px;flex-shrink:0}
 
+/* 回到頂部按鈕 */
+.back-to-top { position: fixed; bottom: 30px; right: 20px; width: 44px; height: 44px; background: var(--g600); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; opacity: 0; visibility: hidden; transition: 0.3s; }
+.back-to-top.show { opacity: 1; visibility: visible; }
+
+@media(max-width:800px){ .nav-links{display:none} }
 @media(max-width:500px){
   .hero h1{font-size:24px}
-  .con-grid{grid-template-columns:1fr}
-  .compare-wrap{grid-template-columns:1fr}
+  .con-grid, .compare-wrap{grid-template-columns:1fr}
   .gallery-grid{grid-template-columns:1fr 1fr}
-  .gallery-item.wide{grid-column:span 1}
+  .gallery-item.wide{grid-column:span 2; grid-row: auto; aspect-ratio:4/3} 
   .ctbl th, .ctbl td {padding:10px 6px;font-size:14px}
   .pp{font-size:16px;padding:4px 8px}
 }
@@ -223,14 +267,22 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 </head>
 <body>
 
-<h2 class="sr-only">懿芯辰居家長照機構官方網站</h2>
+<h2 class="sr-only" id="LsrTitle">懿芯辰居家長照機構官方網站</h2>
 <div class="site">
 
 <nav class="nav">
   <div class="logo-wrap">
     <img src="logo.png" alt="懿芯辰居家長照機構 LOGO" class="logo-img">
+    <img src="1966logo.png" alt="長照3.0 LOGO" class="logo-1966">
     <div class="logo-t"><span id="Ln">懿芯辰居家長照機構</span><small id="Ls">花蓮縣合法立案 · 秀林鄉在地</small></div>
   </div>
+  
+  <div class="nav-links">
+    <a href="#services" id="Lnav1">服務項目</a>
+    <a href="#cost" id="Lnav2">費用說明</a>
+    <a href="#steps" id="Lnav3">申請步驟</a>
+  </div>
+
   <div class="nav-r">
     <div class="lang-btns">
       <button class="lb on" onclick="setLang('zh')">中文</button>
@@ -245,7 +297,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 <div class="hero">
   <div class="hero-badges">
     <div class="badge bw" id="Lb1">花蓮縣政府立案</div>
-    <div class="badge bg" id="Lb2">長照2.0特約機構</div>
+    <div class="badge bg" id="Lb2">長照3.0特約機構</div>
   </div>
   <h1 id="Lh1">讓家人留在家裡，<br>讓照顧<em>有人陪您一起扛</em></h1>
   <p class="hero-desc" id="Ld">懿芯辰居家長照，由在地16人專業團隊提供居家服務、喘息服務與短照服務。服務秀林鄉、壽豐鄉的長輩、身障朋友與太魯閣族鄉親。</p>
@@ -257,15 +309,15 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
     </a>
   </div>
   <div class="tel-row">
-    <div class="tel-i" id="Ltl">服務專線：<strong>03-8610668</strong></div>
+    <a href="tel:038610668" class="tel-i" id="Ltl">服務專線：<strong>03-8610668</strong></a>
     <div style="color:#ccc">|</div>
-    <div class="tel-i" id="Ltel2">假日緊急：<strong>0975-126-270</strong></div>
+    <a href="tel:0975126270" class="tel-i" id="Ltel2">假日緊急：<strong>0975-126-270</strong></a>
   </div>
 </div>
 
 <div class="tstrip">
   <div class="tc"><div class="tc-i">🏛️</div><div class="tc-t" id="Ltr1">政府立案</div><div class="tc-s" id="Ltr1s">花蓮縣核准</div></div>
-  <div class="tc"><div class="tc-i">📋</div><div class="tc-t" id="Ltr2">長照2.0特約</div><div class="tc-s" id="Ltr2s">補助適用</div></div>
+  <div class="tc"><div class="tc-i">📋</div><div class="tc-t" id="Ltr2">長照3.0特約</div><div class="tc-s" id="Ltr2s">補助適用</div></div>
   <div class="tc"><div class="tc-i">🌿</div><div class="tc-t" id="Ltr3">秀林+壽豐</div><div class="tc-s" id="Ltr3s">在地深根</div></div>
   <div class="tc"><div class="tc-i">👥</div><div class="tc-t" id="Ltr4">16人專業團隊</div><div class="tc-s" id="Ltr4s">照服員+督導</div></div>
   <div class="tc"><div class="tc-i">🌏</div><div class="tc-t" id="Ltr5">多語服務</div><div class="tc-s" id="Ltr5s">越印英中</div></div>
@@ -285,6 +337,10 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
       <div class="gallery-caption"><p id="Lgc2">長青老人會頒獎肯定</p></div>
     </div>
     <div class="gallery-item">
+      <img src="p6.jpg" alt="在部落服務現場">
+      <div class="gallery-caption"><p id="Lgc6">見證來自部落的故事</p></div>
+    </div>
+    <div class="gallery-item">
       <img src="p3.jpg" alt="在地市集宣傳推廣">
       <div class="gallery-caption"><p id="Lgc3">走入在地市集，推廣長照服務</p></div>
     </div>
@@ -295,10 +351,6 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
     <div class="gallery-item">
       <img src="p5.jpg" alt="與社區長輩同樂">
       <div class="gallery-caption"><p id="Lgc5">熱情參與在地活動</p></div>
-    </div>
-    <div class="gallery-item">
-      <img src="p6.jpg" alt="在部落服務現場">
-      <div class="gallery-caption"><p id="Lgc6">見證來自部落的故事</p></div>
     </div>
   </div>
 
@@ -358,7 +410,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
       <div>
         <div class="hs-t" id="Lhst2">指定懿芯辰居家長照</div>
         <div class="hs-d" id="Lhsd2">向出院準備護理師說：「請轉介給懿芯辰居家長照機構」，護理師會協助完成指定轉介</div>
-        <div class="hs-tip tip-b" id="Lhstp2">說出我們的名字：懿芯辰居家長照 · 03-8610668</div>
+        <div class="hs-tip tip-b" id="Lhstp2">說出我們的名字：懿芯辰居家長照 · <a href="tel:038610668" style="color:inherit;text-decoration:none">03-8610668</a></div>
       </div>
     </div>
     <div class="hs-item">
@@ -380,7 +432,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   </div>
 </div>
 
-<div class="sec sec-alt">
+<div class="sec sec-alt" id="services">
   <div class="sh" id="Lsh">專業長照三合一服務</div>
   <div class="ss" id="Lss">針對不同家庭的痛點，我們提供客製化的解方</div>
   <div class="svc-grid">
@@ -394,7 +446,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
         <li>翻身拍背、關節活動</li>
         <li>陪伴就醫與外出</li>
       </ul>
-      <div class="sc-tag" id="Ls1tag">長照2.0補助可用</div>
+      <div class="sc-tag" id="Ls1tag">長照3.0補助可用</div>
     </div>
     <div class="sc sc-r">
       <div class="sc-ico">🌸</div>
@@ -406,7 +458,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
         <li>免除家屬自己照顧的技術擔憂</li>
         <li>提升外籍看護長期的照護品質</li>
       </ul>
-      <div class="sc-tag" id="Ls2tag">長照2.0補助可用</div>
+      <div class="sc-tag" id="Ls2tag">長照3.0補助可用</div>
     </div>
     <div class="sc sc-s">
       <div class="sc-ico">🗓️</div>
@@ -420,12 +472,16 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
       <div class="sc-tag" id="Ls3tag">依個案評估補助</div>
     </div>
   </div>
+  
+  <div style="margin-top: 24px;">
+    <img src="image_2204a0.jpg" alt="服務剪影拼貼照片" style="width: 100%; height: auto; border-radius: 12px; display: block; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </div>
 </div>
 
 <div class="sec" id="cost">
   <div class="sh" id="Lch">費用說明：政府高度補助</div>
   <div class="ss" id="Lcs">長照服務以「項目」計費，政府依照收入身分負擔大部分費用。</div>
-  <div class="cost-intro"><p id="Lci">長照2.0依照 <strong>家庭收入</strong> 分三類，收入越低補助越多。<strong>最多只需自付 16%，最少只需 5%。</strong></p></div>
+  <div class="cost-intro"><p id="Lci">長照3.0依照 <strong>家庭收入</strong> 分三類，收入越低補助越多。<strong>最多只需自付 16%，最少只需 5%。</strong></p></div>
   <table class="ctbl">
     <thead><tr>
       <th id="Lth1">身分類別</th><th id="Lth3">政府補助</th><th id="Lth4">您只需負擔</th>
@@ -474,19 +530,90 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   </div>
 </div>
 
-<div class="sec sec-green">
+<div class="sec">
+  <div class="sh" id="LadvH">為什麼選擇懿芯辰？我們的四大堅持</div>
+  <div class="ss" id="LadvS">建立品牌信任感，我們用專業與在地溫情守護您的家人</div>
+  <div class="adv-grid">
+    <div class="adv-card">
+      <div class="adv-ico">📊</div>
+      <div class="adv-t" id="La1t">專業與制度的扎實執行</div>
+      <div class="adv-d" id="La1d"><strong>跨專業研討與小組制度：</strong>我們不只是單兵作戰，透過定期召開跨專業研討會與照服員小組討論，確保每位個案的照顧計畫都能與時俱進，給予最適切的服務。<br><strong>品質改善循環：</strong>透過嚴謹的服務稽查與家屬反饋，我們將「品質改善」視為日常，而不僅僅是為了應付評鑑。</div>
+    </div>
+    <div class="adv-card">
+      <div class="adv-ico">🌱</div>
+      <div class="adv-t" id="La2t">青年返鄉的在地情懷</div>
+      <div class="adv-d" id="La2d"><strong>在地青年，深耕服務：</strong>創辦人帶著熱忱返鄉，因為了解這片土地的長輩與文化，所以更能提供具有「家溫度」的照顧服務。<br><strong>文化共鳴與尊重：</strong>深知部落與地方文化的重要性，將原住民餐食、傳統歌謠等元素融入服務中，讓長輩在熟悉的文化氛圍中安心生活。</div>
+    </div>
+    <div class="adv-card">
+      <div class="adv-ico">📖</div>
+      <div class="adv-t" id="La3t">持續精進的學習型組織</div>
+      <div class="adv-d" id="La3d"><strong>專業職能提升：</strong>機構定期舉辦專業訓練（如CPR+AED訓練），確保第一線同仁具備最新的急救知識與照護技能。<br><strong>教學與傳承：</strong>積極參與人才培育（如規劃實習場域與教學合作），展現我們對長照產業永續發展的承諾。</div>
+    </div>
+    <div class="adv-card">
+      <div class="adv-ico">🤝</div>
+      <div class="adv-t" id="La4t">社區共融與資源整合</div>
+      <div class="adv-d" id="La4d"><strong>跨單位資源連結：</strong>我們不只是居家服務提供者，更是社區的一分子。透過與崇德長青老人會等在地組織合作，建立更綿密的社區照顧網。</div>
+    </div>
+  </div>
+</div>
+
+<div class="sec sec-alt">
+  <div class="sh" id="LtmH">懿芯辰大紀事：里程碑與願景</div>
+  <div class="ss" id="LtmS">一步一腳印，我們與在地一起成長，用時間證明我們的承諾</div>
+  <div class="timeline-wrap">
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year" id="Lt1y">112年 11月</div>
+        <div class="tl-content">
+          <div class="tl-t" id="Lt1t">成功設立</div>
+          <div class="tl-d" id="Lt1d">懿芯辰正式啟航，開啟在地服務新篇章。</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year" id="Lt2y">113年</div>
+        <div class="tl-content">
+          <div class="tl-t" id="Lt2t">推動特色服務</div>
+          <div class="tl-d" id="Lt2d">導入多元文化照顧：融合原住民餐食、圖騰、傳統歌謠，打造具文化認同的照護環境。</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year" id="Lt3y">114年</div>
+        <div class="tl-content">
+          <div class="tl-t" id="Lt3t">評鑑合格</div>
+          <div class="tl-d" id="Lt3d">榮獲居家式長照評鑑合格，專業品質深獲公部門肯定。</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year" id="Lt4y">115年</div>
+        <div class="tl-content">
+          <div class="tl-t" id="Lt4t">在地深度合作</div>
+          <div class="tl-d" id="Lt4d">攜手「崇德長青老人會」成立社區關懷據點，深化社區連結與共融。</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year" id="Lt5y">未來展望</div>
+        <div class="tl-content">
+          <div class="tl-t" id="Lt5t">永續守護</div>
+          <div class="tl-d" id="Lt5d">持續提升服務量能，成為花蓮在地最值得信賴的長照夥伴。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec sec-green" data-nosnippet>
   <div class="sh" id="Lfwh">外籍看護的好幫手</div>
   <div class="ss" id="Lfws">當您需要請假，又擔心沒人照顧雇主家的長輩？台灣政府有解決方案</div>
   <div class="fw-box">
-    <div class="fw-title" id="Lfwt">💡 台灣長照2.0可以幫您的雇主</div>
+    <div class="fw-title" id="Lfwt">💡 台灣長照3.0可以幫您的雇主</div>
     <div class="fw-cards">
       <div class="fw-card">
         <div class="fw-lang">🇻🇳 Tiếng Việt</div>
-        <div class="fw-msg">Khi bạn cần nghỉ phép, chính phủ Đài Loan có dịch vụ <strong>chăm sóc thay thế (喘息服務)</strong> — người chăm sóc chuyên nghiệp sẽ đến nhà thay bạn. Gọi: <strong>0975-126-270</strong></div>
+        <div class="fw-msg">Khi bạn cần nghỉ phép, chính phủ Đài Loan có dịch vụ <strong>chăm sóc thay thế (喘息服務)</strong> — người chăm sóc chuyên nghiệp sẽ đến nhà thay bạn. Gọi: <a href="tel:0975126270" style="color:inherit"><strong>0975-126-270</strong></a></div>
       </div>
       <div class="fw-card">
         <div class="fw-lang">🇮🇩 Bahasa Indonesia</div>
-        <div class="fw-msg">Saat Anda perlu cuti, pemerintah Taiwan punya layanan <strong>perawatan pengganti (喘息服務)</strong> — petugas profesional menggantikan Anda. Hubungi: <strong>0975-126-270</strong></div>
+        <div class="fw-msg">Saat Anda perlu cuti, pemerintah Taiwan punya layanan <strong>perawatan pengganti (喘息服務)</strong> — petugas profesional menggantikan Anda. Hubungi: <a href="tel:0975126270" style="color:inherit"><strong>0975-126-270</strong></a></div>
       </div>
     </div>
   </div>
@@ -503,7 +630,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   </div>
 </div>
 
-<div class="sec sec-alt">
+<div class="sec sec-alt" id="steps">
   <div class="sh" id="Lfh">申請服務，只要四步驟</div>
   <div class="ss" id="Lfs">從第一通電話到開始服務，全程陪您走</div>
   <div class="flow">
@@ -530,12 +657,24 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 
 <div class="sec sec-alt">
   <div class="sh" id="Lqh">常見問題</div>
-  <div class="ss" id="Lqs">家屬最常問我們的問題</div>
+  <div class="ss" id="Lqs">家屬最常問我們的問題（點擊可展開回答）</div>
   <div>
-    <div class="fq-item"><div class="fq-q" id="Lq1">我住在秀林鄉或壽豐鄉，你們可以到府服務嗎？</div><div class="fq-a" id="La1">可以！我們服務秀林鄉全區及壽豐鄉，戶籍不在花蓮也沒關係。懿芯辰本部位於富世村，是您最近的選擇。</div></div>
-    <div class="fq-item"><div class="fq-q" id="Lq2">家人目前住院，什麼時候可以開始申請長照？</div><div class="fq-a" id="La2">現在就可以！住院期間向護理站說「我想申請居家長照服務，指定懿芯辰」，由醫院出院準備護理師轉介，最快一週內即可開始服務，比出院後再申請快一倍以上，千萬不要等！</div></div>
-    <div class="fq-item"><div class="fq-q" id="Lq3">原住民族幾歲可以申請長照？</div><div class="fq-a" id="La3">原住民朋友55歲即符合長照申請資格，比一般民眾早整整10年。秀林鄉太魯閣族鄉親歡迎來電，我們熟悉申請流程，快速協助辦理。</div></div>
-    <div class="fq-item"><div class="fq-q" id="Lq4">家裡有外籍看護，還需要長照服務嗎？</div><div class="fq-a" id="La4">可以同時使用！外籍看護請假時，可以申請喘息服務讓我們的照服員來代班，雇主不用擔心空窗期。兩者並行，互不影響。</div></div>
+    <div class="fq-item">
+      <div class="fq-q" id="Lq1">我住在秀林鄉或壽豐鄉，你們可以到府服務嗎？</div>
+      <div class="fq-a" id="La1">可以！我們服務秀林鄉全區及壽豐鄉，戶籍不在花蓮也沒關係。懿芯辰本部位於富世村，是您最近的選擇。</div>
+    </div>
+    <div class="fq-item">
+      <div class="fq-q" id="Lq2">家人目前住院，什麼時候可以開始申請長照？</div>
+      <div class="fq-a" id="La2">現在就可以！住院期間向護理站說「我想申請居家長照服務，指定懿芯辰」，由醫院出院準備護理師轉介，最快一週內即可開始服務，比出院後再申請快一倍以上，千萬不要等！</div>
+    </div>
+    <div class="fq-item">
+      <div class="fq-q" id="Lq3">原住民族幾歲可以申請長照？</div>
+      <div class="fq-a" id="La3">原住民朋友55歲即符合長照申請資格，比一般民眾早整整10年。秀林鄉太魯閣族鄉親歡迎來電，我們熟悉申請流程，快速協助辦理。</div>
+    </div>
+    <div class="fq-item">
+      <div class="fq-q" id="Lq4">家裡有外籍看護，還需要長照服務嗎？</div>
+      <div class="fq-a" id="La4">可以同時使用！外籍看護請假時，可以申請喘息服務讓我們的照服員來代班，雇主不用擔心空窗期。兩者並行，互不影響。</div>
+    </div>
   </div>
 </div>
 
@@ -546,8 +685,8 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
     <a class="cta-w" href="https://lin.ee/TXkYgJp" target="_blank" id="LctaBtn">點此加 Line 專人服務</a>
   </div>
   <div class="cta-tel" style="margin-top:10px;">
-    <span id="Lcttel1">服務專線：03-8610668</span><br>
-    <span id="Lcttel2" style="display:inline-block;margin-top:4px;">假日緊急：0975-126-270</span>
+    <a href="tel:038610668" style="color:inherit;text-decoration:none"><span id="Lcttel1">服務專線：03-8610668</span></a><br>
+    <a href="tel:0975126270" style="color:inherit;text-decoration:none"><span id="Lcttel2" style="display:inline-block;margin-top:4px;">假日緊急：0975-126-270</span></a>
   </div>
 </div>
 
@@ -557,12 +696,12 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   <div class="con-grid">
     <div class="con-c">
       <div class="con-l" id="Lcl1">服務電話</div>
-      <div class="con-v">03-8610668</div>
+      <a href="tel:038610668" class="con-v">03-8610668</a>
       <div class="con-s" id="Lcs1">週一至週五，上班時間</div>
     </div>
     <div class="con-c">
       <div class="con-l" id="Lcl2">行動電話</div>
-      <div class="con-v">0975-126-270</div>
+      <a href="tel:0975126270" class="con-v">0975-126-270</a>
       <div class="con-s" id="Lcs2">假日及緊急聯絡</div>
     </div>
     <div class="con-c">
@@ -575,14 +714,17 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
     </div>
     <div class="con-c">
       <div class="con-l" id="Lcl3">機構地址</div>
-      <div class="con-v" style="font-size:16px;line-height:1.6">花蓮縣秀林鄉富世村<br>8鄰富世145-2號</div>
+      <div class="con-v" id="Lcv3" style="font-size:16px;line-height:1.6">花蓮縣秀林鄉富世村<br>8鄰富世145-2號</div>
       <div class="con-s" id="Lcs3">歡迎預約參觀</div>
     </div>
   </div>
 </div>
 
 <div class="big-logo-sec">
-  <img src="logo.png" alt="懿芯辰居家長照機構 LOGO" class="big-logo-img">
+  <div style="display:flex; justify-content:center; align-items:center; gap:20px; margin-bottom:16px; flex-wrap:wrap;">
+    <img src="logo.png" alt="懿芯辰居家長照機構 LOGO" style="width:100%; max-width:200px; height:auto; display:block;">
+    <img src="1966logo.png" alt="長照3.0 LOGO" style="width:100%; max-width:130px; height:auto; display:block;">
+  </div>
   <div class="big-logo-t" id="LbigT">懿芯辰居家長照機構</div>
   <div class="big-logo-s" id="LbigS">專業品質服務 · 長照最佳小幫手</div>
 </div>
@@ -595,25 +737,49 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
     </a>
   </div>
   <p id="LfootC" style="font-weight:600; color:#333; margin-bottom:8px;">© 懿芯辰有限公司附設花蓮縣私立懿芯辰居家長照機構</p>
+  <p id="LfootLic" style="font-size:13px; color:#888; margin-bottom:8px;">府衛長字第1120224439號</p>
   <p id="LfootA">花蓮縣秀林鄉富世村8鄰富世145-2號</p>
-  <p style="margin-bottom:8px;"><span id="LfootT1">服務專線：03-8610668</span>｜<span id="LfootT2">假日緊急：0975-126-270</span></p>
+  <p style="margin-bottom:8px;">
+    <a href="tel:038610668" style="color:inherit;text-decoration:none"><span id="LfootT1">服務專線：03-8610668</span></a>｜
+    <a href="tel:0975126270" style="color:inherit;text-decoration:none"><span id="LfootT2">假日緊急：0975-126-270</span></a>
+  </p>
   <p id="LfootS" style="margin-top:12px;font-size:12px;color:#888;">本機構依長期照顧服務法設立，受花蓮縣政府監督管理</p>
 </div>
 
 </div>
 
+<a href="#" class="back-to-top" id="backToTop">↑</a>
+
 <script>
-// ==========================================
-// 完整多國語言資料庫 (所有 ID 皆已綁定對齊)
-// ==========================================
+document.querySelectorAll('.fq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const a = q.nextElementSibling;
+    q.classList.toggle('active');
+    a.classList.toggle('active');
+  });
+});
+
+const btt = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    btt.classList.add('show');
+  } else {
+    btt.classList.remove('show');
+  }
+});
+
 const T={
 zh:{
+'LsrTitle':'懿芯辰居家長照機構官方網站',
+'Lnav1':'服務項目', 'Lnav2':'費用說明', 'Lnav3':'申請步驟',
+'Lcv3':'花蓮縣秀林鄉富世村<br>8鄰富世145-2號',
+'LfootLic':'府衛長字第1120224439號',
 'Ln':'懿芯辰居家長照機構','Ls':'花蓮縣合法立案 · 秀林鄉在地','Lnc':'免費諮詢',
-'Lb1':'花蓮縣政府立案','Lb2':'長照2.0特約機構',
+'Lb1':'花蓮縣政府立案','Lb2':'長照3.0特約機構',
 'Lh1':'讓家人留在家裡，<br>讓照顧<em>有人陪您一起扛</em>',
 'Ld':'懿芯辰居家長照，由在地16人專業團隊提供居家服務、喘息服務與短照服務。服務秀林鄉、壽豐鄉的長輩、身障朋友與太魯閣族鄉親。',
 'Lb1b':'了解補助資格 →','LlineT':'加Line諮詢','Ltl':'服務專線：<strong>03-8610668</strong>','Ltel2':'假日緊急：<strong>0975-126-270</strong>',
-'Ltr1':'政府立案','Ltr1s':'花蓮縣核准','Ltr2':'長照2.0特約','Ltr2s':'補助適用','Ltr3':'秀林+壽豐','Ltr3s':'在地深根','Ltr4':'16人專業團隊','Ltr4s':'照服員+督導','Ltr5':'多語服務','Ltr5s':'越印英中',
+'Ltr1':'政府立案','Ltr1s':'花蓮縣核准','Ltr2':'長照3.0特約','Ltr2s':'補助適用','Ltr3':'秀林+壽豐','Ltr3s':'在地深根','Ltr4':'16人專業團隊','Ltr4s':'照服員+督導','Ltr5':'多語服務','Ltr5s':'越印英中',
 
 'Lgh':'我們在花蓮，我們在您身邊','Lgs':'從部落到市集，從社區活動到老人會，懿芯辰的腳步遍及秀林鄉、壽豐鄉各個角落',
 'Lgc1':'與秀林鄉長輩們的大家庭合照 — 這就是我們服務的動力',
@@ -637,14 +803,14 @@ zh:{
 
 'Lsh':'專業長照三合一服務','Lss':'針對不同家庭的痛點，我們提供客製化的解方',
 'Ls1t':'居家服務','Ls1d':'維持乾淨與尊嚴，讓長輩舒適留在熟悉的家。',
-'Ls1ul':'<li>協助沐浴、盥洗、如廁</li><li>備餐、餵食、協助服藥</li><li>翻身拍背、關節活動</li><li>陪伴就醫與外出</li>','Ls1tag':'長照2.0補助可用',
+'Ls1ul':'<li>協助沐浴、盥洗、如廁</li><li>備餐、餵食、協助服藥</li><li>翻身拍背、關節活動</li><li>陪伴就醫與外出</li>','Ls1tag':'長照3.0補助可用',
 'Ls2t':'喘息服務','Ls2d':'專為「家屬」與「外籍看護」設計的放鬆時刻。',
-'Ls2ul':'<li>讓壓力過大的家屬能獨自出門散心</li><li>外籍看護每月休假（約10小時），由我們專業接手</li><li>免除家屬自己照顧的技術擔憂</li><li>提升外籍看護長期的照護品質</li>','Ls2tag':'長照2.0補助可用',
+'Ls2ul':'<li>讓壓力過大的家屬能獨自出門散心</li><li>外籍看護每月休假（約10小時），由我們專業接手</li><li>免除家屬自己照顧的技術擔憂</li><li>提升外籍看護長期的照護品質</li>','Ls2tag':'長照3.0補助可用',
 'Ls3t':'短照服務','Ls3d':'提供有外勞家庭「更長天數」的完美支援。',
 'Ls3ul':'<li>外籍看護親友來台聚會需請假</li><li>外籍看護想回國過年過節（一週或以上）</li><li>我們提供密集照顧，完美補足空窗期</li>','Ls3tag':'依個案評估補助',
 
 'Lch':'費用說明：政府高度補助','Lcs':'長照服務以「項目」計費，政府依照收入身分負擔大部分費用。',
-'Lci':'長照2.0依照 <strong>家庭收入</strong> 分三類，收入越低補助越多。<strong>最多只需自付 16%，最少只需 5%。</strong>',
+'Lci':'長照3.0依照 <strong>家庭收入</strong> 分三類，收入越低補助越多。<strong>最多只需自付 16%，最少只需 5%。</strong>',
 'Lth1':'身分類別','Lth3':'政府補助','Lth4':'您只需負擔',
 'Lc1n':'<strong>一般戶（第一類）</strong>',
 'Lc2n':'<strong>中低收入戶（第二類）</strong>',
@@ -658,8 +824,27 @@ zh:{
 'Ltv3t':'固定照服員','Ltv3d':'盡量安排固定人員，讓長輩建立熟悉感與安全感',
 'Ltv4t':'定期回報','Ltv4d':'督導定期向家屬回報長輩狀況，讓外地家屬也能安心',
 
+'LadvH':'為什麼選擇懿芯辰？我們的四大堅持',
+'LadvS':'建立品牌信任感，我們用專業與在地溫情守護您的家人',
+'La1t':'專業與制度的扎實執行',
+'La1d':'<strong>跨專業研討與小組制度：</strong>我們不只是單兵作戰，透過定期召開跨專業研討會與照服員小組討論，確保每位個案的照顧計畫都能與時俱進，給予最適切的服務。<br><strong>品質改善循環：</strong>透過嚴謹的服務稽查與家屬反饋，我們將「品質改善」視為日常，而不僅僅是為了應付評鑑。',
+'La2t':'青年返鄉的在地情懷',
+'La2d':'<strong>在地青年，深耕服務：</strong>創辦人帶著熱忱返鄉，因為了解這片土地的長輩與文化，所以更能提供具有「家溫度」的照顧服務。<br><strong>文化共鳴與尊重：</strong>深知部落與地方文化的重要性，將原住民餐食、傳統歌謠等元素融入服務中，讓長輩在熟悉的文化氛圍中安心生活。',
+'La3t':'持續精進的學習型組織',
+'La3d':'<strong>專業職能提升：</strong>機構定期舉辦專業訓練（如CPR+AED訓練），確保第一線同仁具備最新的急救知識與照護技能。<br><strong>教學與傳承：</strong>積極參與人才培育（如規劃實習場域與教學合作），展現我們對長照產業永續發展的承諾。',
+'La4t':'社區共融與資源整合',
+'La4d':'<strong>跨單位資源連結：</strong>我們不只是居家服務提供者，更是社區的一分子。透過與崇德長青老人會等在地組織合作，建立更綿密的社區照顧網。',
+
+'LtmH':'懿芯辰大紀事：里程碑與願景',
+'LtmS':'一步一腳印，我們與在地一起成長，用時間證明我們的承諾',
+'Lt1y':'112年 11月', 'Lt1t':'成功設立', 'Lt1d':'懿芯辰正式啟航，開啟在地服務新篇章。',
+'Lt2y':'113年', 'Lt2t':'推動特色服務', 'Lt2d':'導入多元文化照顧：融合原住民餐食、圖騰、傳統歌謠，打造具文化認同的照護環境。',
+'Lt3y':'114年', 'Lt3t':'評鑑合格', 'Lt3d':'榮獲居家式長照評鑑合格，專業品質深獲公部門肯定。',
+'Lt4y':'115年', 'Lt4t':'在地深度合作', 'Lt4d':'攜手「崇德長青老人會」成立社區關懷據點，深化社區連結與共融。',
+'Lt5y':'未來展望', 'Lt5t':'永續守護', 'Lt5d':'持續提升服務量能，成為花蓮在地最值得信賴的長照夥伴。',
+
 'Lfwh':'外籍看護的好幫手','Lfws':'當您需要請假，又擔心沒人照顧雇主家的長輩？台灣政府有解決方案',
-'Lfwt':'💡 台灣長照2.0可以幫您的雇主',
+'Lfwt':'💡 台灣長照3.0可以幫您的雇主',
 'Lfwn':'您可以把這個資訊告訴您的雇主，或直接請雇主撥打我們的服務電話。我們用中文與雇主溝通，協助辦理所有申請手續。',
 
 'Lph':'我們懂您的擔心','Lps':'很多家屬都有這些疑慮，讓我們一起面對',
@@ -678,7 +863,7 @@ zh:{
 'Lan':'包含富世村、崇德村、和平村、景美村、壽豐村等各村落。戶籍不在花蓮也沒關係，只要實際居住在服務範圍內即可申請。',
 'Lmb':'在 Google 地圖查看位置',
 
-'Lqh':'常見問題','Lqs':'家屬最常問我們的問題',
+'Lqh':'常見問題','Lqs':'家屬最常問我們的問題（點擊可展開回答）',
 'Lq1':'我住在秀林鄉或壽豐鄉，你們可以到府服務嗎？','La1':'可以！我們服務秀林鄉全區及壽豐鄉，戶籍不在花蓮也沒關係。懿芯辰本部位於富世村，是您最近的選擇。',
 'Lq2':'家人目前住院，什麼時候可以開始申請長照？','La2':'現在就可以！住院期間向護理站說「我想申請居家長照服務，指定懿芯辰」，由醫院出院準備護理師轉介，最快一週內即可開始服務，比出院後再申請快一倍以上，千萬不要等！',
 'Lq3':'原住民族幾歲可以申請長照？','La3':'原住民朋友55歲即符合長照申請資格，比一般民眾早整整10年。秀林鄉太魯閣族鄉親歡迎來電，我們熟悉申請流程，快速協助辦理。',
@@ -700,12 +885,16 @@ zh:{
 },
 
 en:{
+'LsrTitle':'Yi Xin Chen Home Care Official Website',
+'Lnav1':'Services', 'Lnav2':'Pricing', 'Lnav3':'How to Apply',
+'Lcv3':'No. 145-2, Fushi,<br>Xiulin Township, Hualien',
+'LfootLic':'Gov License No. 1120224439',
 'Ln':'Yi Xin Chen Home Care','Ls':'Licensed in Hualien · Local Service','Lnc':'Free Consult',
-'Lb1':'Gov Licensed','Lb2':'LTC 2.0 Partner',
+'Lb1':'Gov Licensed','Lb2':'LTC 3.0 Partner',
 'Lh1':'Aging in place,<br><em>We share your caregiving burden</em>',
 'Ld':'Our 16-person local team provides professional home care, respite care, and short-term care in Xiulin and Shoufeng townships.',
 'Lb1b':'Check Eligibility →','LlineT':'Line Consult','Ltl':'Hotline: <strong>03-8610668</strong>','Ltel2':'Emergency: <strong>0975-126-270</strong>',
-'Ltr1':'Licensed','Ltr1s':'Hualien','Ltr2':'LTC 2.0','Ltr2s':'Subsidies','Ltr3':'Local Area','Ltr3s':'Xiulin/Shoufeng','Ltr4':'16-Person Team','Ltr4s':'Warm Care','Ltr5':'Multilingual','Ltr5s':'EN/VI/ID',
+'Ltr1':'Licensed','Ltr1s':'Hualien','Ltr2':'LTC 3.0','Ltr2s':'Subsidies','Ltr3':'Local Area','Ltr3s':'Xiulin/Shoufeng','Ltr4':'16-Person Team','Ltr4s':'Warm Care','Ltr5':'Multilingual','Ltr5s':'EN/VI/ID',
 
 'Lgh':'We are in Hualien, right by your side','Lgs':'From local markets to community centers, we serve every corner of Xiulin and Shoufeng.',
 'Lgc1':'Group photo with elders — the driving force of our service',
@@ -729,14 +918,14 @@ en:{
 
 'Lsh':'3-in-1 Professional Care','Lss':'Customized solutions for different family needs.',
 'Ls1t':'Home Care','Ls1d':'Maintaining dignity and cleanliness at home.',
-'Ls1ul':'<li>Bathing & Toileting</li><li>Meals & Medication Reminders</li><li>Repositioning & Transfers</li><li>Medical Escort</li>','Ls1tag':'LTC 2.0 subsidy eligible',
+'Ls1ul':'<li>Bathing & Toileting</li><li>Meals & Medication Reminders</li><li>Repositioning & Transfers</li><li>Medical Escort</li>','Ls1tag':'LTC 3.0 subsidy eligible',
 'Ls2t':'Respite Care','Ls2d':'Relaxation time for family and foreign caregivers.',
-'Ls2ul':'<li>Relieve family caregiver stress</li><li>Cover for foreign caregiver\'s day off</li><li>Professional care guaranteed</li><li>Improve long-term caregiving quality</li>','Ls2tag':'LTC 2.0 subsidy eligible',
+'Ls2ul':'<li>Relieve family caregiver stress</li><li>Cover for foreign caregiver\'s day off</li><li>Professional care guaranteed</li><li>Improve long-term caregiving quality</li>','Ls2tag':'LTC 3.0 subsidy eligible',
 'Ls3t':'Short-term Care','Ls3d':'Extended support when foreign caregivers are away.',
 'Ls3ul':'<li>When foreign caregiver\'s family visits Taiwan</li><li>When foreign caregiver goes home for holidays</li><li>Intensive replacement care provided</li>','Ls3tag':'Assessed by case',
 
 'Lch':'Costs: Highly Subsidized','Lcs':'Billed by service items, heavily subsidized based on income.',
-'Lci':'LTC 2.0 has <strong>3 subsidy tiers based on income</strong>. Lower income = less you pay. <strong>Maximum: 16%. Minimum: 5%. Low Income: 0%.</strong>',
+'Lci':'LTC 3.0 has <strong>3 subsidy tiers based on income</strong>. Lower income = less you pay. <strong>Maximum: 16%. Minimum: 5%. Low Income: 0%.</strong>',
 'Lth1':'Category','Lth3':'Gov Subsidy','Lth4':'You Pay',
 'Lc1n':'<strong>General (Cat. 1)</strong>',
 'Lc2n':'<strong>Near-Low (Cat. 2)</strong>',
@@ -750,8 +939,27 @@ en:{
 'Ltv3t':'Consistent caregivers','Ltv3d':'We assign the same caregiver so your loved one builds familiarity',
 'Ltv4t':'Regular updates','Ltv4d':'Supervisors keep family informed so you can work in peace',
 
+'LadvH':'Why Choose Yi Xin Chen? Our 4 Core Commitments',
+'LadvS':'Building trust through professionalism and warm, local care for your family.',
+'La1t':'Professionalism & Systematic Execution',
+'La1d':'<strong>Interdisciplinary teamwork:</strong> Regular case conferences ensure care plans are always optimal.<br><strong>Quality improvement:</strong> Rigorous audits and family feedback make continuous improvement our daily routine.',
+'La2t':'Local Youth Returning with Passion',
+'La2d':'<strong>Deep local roots:</strong> Founded by a returning youth, providing care with the warmth of home.<br><strong>Cultural resonance:</strong> Incorporating indigenous meals and traditional songs so elders feel culturally at ease.',
+'La3t':'A Continuous Learning Organization',
+'La3d':'<strong>Skill enhancement:</strong> Regular professional training (like CPR+AED) for frontline staff.<br><strong>Teaching & passing on:</strong> Actively participating in talent cultivation and internship programs for industry sustainability.',
+'La4t':'Community Integration & Resource Linking',
+'La4d':'<strong>Cross-unit collaboration:</strong> Partnering with local organizations like the Chongde Evergreen Senior Citizens\' Association to build a robust community care network.',
+
+'LtmH':'Milestones & Vision',
+'LtmS':'Step by step, growing alongside our local community.',
+'Lt1y':'Nov 2023', 'Lt1t':'Establishment', 'Lt1d':'Yi Xin Chen officially launched, starting a new chapter of local service.',
+'Lt2y':'2024', 'Lt2t':'Featured Cultural Services', 'Lt2d':'Introduced multicultural care: blending indigenous meals, totems, and traditional songs.',
+'Lt3y':'2025', 'Lt3t':'Evaluation Passed', 'Lt3d':'Passed the Home Care Evaluation, receiving government recognition for our professional quality.',
+'Lt4y':'2026', 'Lt4t':'Deep Local Collaboration', 'Lt4d':'Partnered with "Chongde Evergreen Senior Citizens\' Association" to establish a community care hub.',
+'Lt5y':'Future Vision', 'Lt5t':'Sustainable Guardianship', 'Lt5d':'Continuously enhancing service capacity to remain Hualien\'s most trusted LTC partner.',
+
 'Lfwh':'For Foreign Caregivers','Lfws':'Need to take leave but worried about who will care for the elderly? Taiwan\'s government has a solution',
-'Lfwt':'💡 LTC 2.0 can help your employer',
+'Lfwt':'💡 LTC 3.0 can help your employer',
 'Lfwn':'Share this with your employer or ask them to call us directly. We communicate with employers in Chinese and handle all the paperwork.',
 
 'Lph':'We Understand Your Concerns','Lps':'Many families share the same worries',
@@ -770,7 +978,7 @@ en:{
 'Lan':'Covering Fushi, Chongde, Heping, Jingmei, Shoufeng villages and more. Actual residence in the area is what matters.',
 'Lmb':'View on Google Maps',
 
-'Lqh':'FAQ','Lqs':'Questions families ask us most',
+'Lqh':'FAQ','Lqs':'Questions families ask us most (Click to expand)',
 'Lq1':'I live in Xiulin or Shoufeng — can you come to my home?','La1':'Yes! We serve all of Xiulin and Shoufeng townships. Our office is in Fushi Village.',
 'Lq2':'Hospitalized now, when can we apply?','La2':'Right now! Ask the nurse for a "Home Care Referral to Yi Xin Chen". This starts service 2x faster than waiting until discharge.',
 'Lq3':'At what age can indigenous people apply?','La3':'Indigenous residents can apply starting at age 55 (10 years earlier than general public).',
@@ -793,12 +1001,16 @@ en:{
 },
 
 vi:{
+'LsrTitle':'Trang web chính thức của Yi Xin Chen',
+'Lnav1':'Dịch vụ', 'Lnav2':'Chi phí', 'Lnav3':'Đăng ký',
+'Lcv3':'Số 145-2, Làng Fushi,<br>Huyện Xiulin, Hualien',
+'LfootLic':'Giấy phép số 1120224439',
 'Ln':'Trung Tâm Yi Xin Chen','Ls':'Được cấp phép · Xiulin & Shoufeng','Lnc':'Tư vấn miễn phí',
-'Lb1':'Được cấp phép Hualien','Lb2':'Đối tác LTC 2.0',
+'Lb1':'Được cấp phép Hualien','Lb2':'Đối tác LTC 3.0',
 'Lh1':'An hưởng tuổi già tại nhà,<br><em>Chúng tôi chia sẻ gánh nặng</em>',
 'Ld':'Đội ngũ 16 người của chúng tôi cung cấp chăm sóc tại nhà, dịch vụ nghỉ ngơi chuyên nghiệp tại Xiulin và Shoufeng.',
 'Lb1b':'Kiểm tra điều kiện →','LlineT':'Tư vấn Line','Ltl':'Hotline: <strong>03-8610668</strong>','Ltel2':'Khẩn cấp: <strong>0975-126-270</strong>',
-'Ltr1':'Cấp phép','Ltr1s':'Hualien','Ltr2':'Đối tác LTC','Ltr2s':'Có trợ cấp','Ltr3':'Khu vực','Ltr3s':'Xiulin/Shoufeng','Ltr4':'Đội 16 người','Ltr4s':'Chuyên nghiệp','Ltr5':'Đa ngôn ngữ','Ltr5s':'VI/ID/EN/ZH',
+'Ltr1':'Cấp phép','Ltr1s':'Hualien','Ltr2':'Đối tác LTC 3.0','Ltr2s':'Có trợ cấp','Ltr3':'Khu vực','Ltr3s':'Xiulin/Shoufeng','Ltr4':'Đội 16 người','Ltr4s':'Chuyên nghiệp','Ltr5':'Đa ngôn ngữ','Ltr5s':'VI/ID/EN/ZH',
 
 'Lgh':'Chúng tôi ở ngay bên bạn','Lgs':'Từ chợ địa phương đến trung tâm cộng đồng, chúng tôi phục vụ mọi nơi.',
 'Lgc1':'Chụp ảnh cùng người cao tuổi','Lgc2':'Được hội người cao tuổi khen thưởng','Lgc3':'Quảng bá tại chợ địa phương','Lgc4':'Đội ngũ năng động','Lgc5':'Sự kiện cộng đồng','Lgc6':'Câu chuyện bản làng',
@@ -820,14 +1032,14 @@ vi:{
 
 'Lsh':'3 Dịch Vụ Chuyên Nghiệp','Lss':'Giải pháp tùy chỉnh cho từng gia đình.',
 'Ls1t':'Chăm sóc tại nhà','Ls1d':'Duy trì vệ sinh và tôn nghiêm tại nhà.',
-'Ls1ul':'<li>Tắm rửa & Vệ sinh</li><li>Bữa ăn & Nhắc uống thuốc</li><li>Hỗ trợ thay đổi tư thế</li><li>Đồng hành khám bệnh</li>','Ls1tag':'Trợ cấp LTC 2.0',
+'Ls1ul':'<li>Tắm rửa & Vệ sinh</li><li>Bữa ăn & Nhắc uống thuốc</li><li>Hỗ trợ thay đổi tư thế</li><li>Đồng hành khám bệnh</li>','Ls1tag':'Trợ cấp LTC 3.0',
 'Ls2t':'Dịch vụ nghỉ ngơi','Ls2d':'Thời gian thư giãn cho gia đình và người giúp việc.',
-'Ls2ul':'<li>Giảm căng thẳng cho gia đình</li><li>Thay thế người giúp việc ngày nghỉ</li><li>Đảm bảo chăm sóc chuyên nghiệp</li><li>Nâng cao chất lượng chăm sóc</li>','Ls2tag':'Trợ cấp LTC 2.0',
+'Ls2ul':'<li>Giảm căng thẳng cho gia đình</li><li>Thay thế người giúp việc ngày nghỉ</li><li>Đảm bảo chăm sóc chuyên nghiệp</li><li>Nâng cao chất lượng chăm sóc</li>','Ls2tag':'Trợ cấp LTC 3.0',
 'Ls3t':'Chăm sóc ngắn hạn','Ls3d':'Hỗ trợ mở rộng khi người giúp việc đi vắng.',
 'Ls3ul':'<li>Khi người giúp việc có gia đình sang thăm</li><li>Khi người giúp việc về nước dịp lễ</li><li>Cung cấp chăm sóc thay thế</li>','Ls3tag':'Đánh giá theo ca',
 
 'Lch':'Chi phí: Trợ cấp cao','Lcs':'Tính phí theo hạng mục, trợ cấp dựa trên thu nhập.',
-'Lci':'LTC 2.0 có <strong>3 mức trợ cấp</strong>. <strong>Tối đa tự trả: 16%. Tối thiểu: 5%. Hộ nghèo: 0%.</strong>',
+'Lci':'LTC 3.0 có <strong>3 mức trợ cấp</strong>. <strong>Tối đa tự trả: 16%. Tối thiểu: 5%. Hộ nghèo: 0%.</strong>',
 'Lth1':'Loại','Lth3':'Trợ cấp','Lth4':'Bạn trả',
 'Lc1n':'<strong>Thông thường (Loại 1)</strong>',
 'Lc2n':'<strong>Cận nghèo (Loại 2)</strong>',
@@ -841,8 +1053,27 @@ vi:{
 'Ltv3t':'Nhân viên cố định','Ltv3d':'Tạo sự quen thuộc và tin tưởng',
 'Ltv4t':'Cập nhật thường xuyên','Ltv4d':'Giám sát báo cáo cho gia đình an tâm',
 
+'LadvH':'Tại sao chọn Yi Xin Chen? 4 Cam kết cốt lõi',
+'LadvS':'Xây dựng lòng tin thông qua sự chuyên nghiệp và sự chăm sóc ấm áp, đậm chất địa phương.',
+'La1t':'Chuyên nghiệp & Thực thi hệ thống',
+'La1d':'<strong>Làm việc nhóm liên ngành:</strong> Các cuộc họp đánh giá thường xuyên đảm bảo kế hoạch chăm sóc luôn tối ưu.<br><strong>Cải tiến chất lượng:</strong> Kiểm toán nghiêm ngặt và phản hồi từ gia đình giúp cải tiến liên tục.',
+'La2t':'Thanh niên địa phương trở về',
+'La2d':'<strong>Gắn bó sâu sắc:</strong> Người sáng lập là thanh niên địa phương trở về, mang đến sự chăm sóc ấm áp như gia đình.<br><strong>Tôn trọng văn hóa:</strong> Kết hợp các bữa ăn và bài hát truyền thống của người bản địa.',
+'La3t':'Tổ chức học tập không ngừng',
+'La3d':'<strong>Nâng cao kỹ năng:</strong> Đào tạo thường xuyên (như CPR+AED) cho nhân viên.<br><strong>Giảng dạy & truyền đạt:</strong> Tích cực tham gia đào tạo nhân tài và các chương trình thực tập.',
+'La4t':'Hội nhập cộng đồng',
+'La4d':'<strong>Hợp tác liên đơn vị:</strong> Hợp tác với các tổ chức như Hội Người cao tuổi Chongde để xây dựng mạng lưới chăm sóc mạnh mẽ.',
+
+'LtmH':'Cột mốc & Tầm nhìn',
+'LtmS':'Từng bước phát triển cùng cộng đồng địa phương.',
+'Lt1y':'Tháng 11, 2023', 'Lt1t':'Thành lập', 'Lt1d':'Yi Xin Chen chính thức ra mắt, bắt đầu chương mới về dịch vụ địa phương.',
+'Lt2y':'2024', 'Lt2t':'Dịch vụ Văn hóa Đặc trưng', 'Lt2d':'Giới thiệu chăm sóc đa văn hóa: kết hợp các bữa ăn, biểu tượng và bài hát truyền thống của người bản địa.',
+'Lt3y':'2025', 'Lt3t':'Vượt qua Đánh giá', 'Lt3d':'Vượt qua Đánh giá Chăm sóc tại nhà, nhận được sự công nhận của chính phủ về chất lượng.',
+'Lt4y':'2026', 'Lt4t':'Hợp tác Sâu rộng', 'Lt4d':'Hợp tác với "Hội Người cao tuổi Chongde" để thành lập trung tâm chăm sóc cộng đồng.',
+'Lt5y':'Tầm nhìn Tương lai', 'Lt5t':'Bảo vệ Bền vững', 'Lt5d':'Không ngừng nâng cao năng lực phục vụ để trở thành đối tác LTC đáng tin cậy nhất tại Hualien.',
+
 'Lfwh':'Dành cho người giúp việc','Lfws':'Khi bạn nghỉ phép, có giải pháp trợ giúp từ chính phủ',
-'Lfwt':'💡 LTC 2.0 hỗ trợ chủ nhà của bạn',
+'Lfwt':'💡 LTC 3.0 hỗ trợ chủ nhà của bạn',
 'Lfwn':'Hãy báo cho chủ nhà hoặc nhờ họ gọi chúng tôi. Chúng tôi sẽ lo mọi thủ tục bằng tiếng Trung.',
 
 'Lph':'Chúng Tôi Hiểu Nỗi Lo Của Bạn','Lps':'Nhiều gia đình cũng lo lắng như vậy',
@@ -861,7 +1092,7 @@ vi:{
 'Lan':'Đăng ký hộ khẩu ở nơi khác cũng được.',
 'Lmb':'Xem trên Google Maps',
 
-'Lqh':'Câu Hỏi Thường Gặp','Lqs':'Những câu hỏi phổ biến nhất',
+'Lqh':'Câu Hỏi Thường Gặp','Lqs':'Những câu hỏi phổ biến nhất (Nhấp để mở rộng)',
 'Lq1':'Tôi ở Xiulin hoặc Shoufeng — có đến nhà không?','La1':'Có! Chúng tôi phục vụ toàn bộ Xiulin và Shoufeng.',
 'Lq2':'Đang nằm viện, khi nào đăng ký được?','La2':'Ngay bây giờ! Hãy yêu cầu y tá giới thiệu ngay để dịch vụ bắt đầu nhanh gấp đôi.',
 'Lq3':'Người bản địa đủ điều kiện từ mấy tuổi?','La3':'Từ 55 tuổi — sớm hơn 10 năm so với người bình thường.',
@@ -883,12 +1114,16 @@ vi:{
 },
 
 id:{
+'LsrTitle':'Situs Web Resmi Yi Xin Chen',
+'Lnav1':'Layanan', 'Lnav2':'Biaya', 'Lnav3':'Cara Daftar',
+'Lcv3':'No. 145-2, Desa Fushi,<br>Kec. Xiulin, Hualien',
+'LfootLic':'Izin Pemerintah No. 1120224439',
 'Ln':'Lembaga Yi Xin Chen','Ls':'Berizin · Xiulin & Shoufeng','Lnc':'Konsultasi Gratis',
-'Lb1':'Berizin Resmi','Lb2':'Mitra LTC 2.0',
+'Lb1':'Berizin Resmi','Lb2':'Mitra LTC 3.0',
 'Lh1':'Menua di rumah,<br><em>Kami berbagi beban perawatan</em>',
 'Ld':'Tim lokal 16 orang kami menyediakan perawatan profesional di rumah dan layanan istirahat di Xiulin dan Shoufeng.',
 'Lb1b':'Cek Kelayakan →','LlineT':'Konsultasi Line','Ltl':'Hotline: <strong>03-8610668</strong>','Ltel2':'Darurat: <strong>0975-126-270</strong>',
-'Ltr1':'Berizin','Ltr1s':'Hualien','Ltr2':'LTC 2.0','Ltr2s':'Ada Subsidi','Ltr3':'Area Lokal','Ltr3s':'Xiulin/Shoufeng','Ltr4':'Tim 16 Orang','Ltr4s':'Perawatan Hangat','Ltr5':'Multibahasa','Ltr5s':'ID/VI/EN/ZH',
+'Ltr1':'Berizin','Ltr1s':'Hualien','Ltr2':'LTC 3.0','Ltr2s':'Ada Subsidi','Ltr3':'Area Lokal','Ltr3s':'Xiulin/Shoufeng','Ltr4':'Tim 16 Orang','Ltr4s':'Perawatan Hangat','Ltr5':'Multibahasa','Ltr5s':'ID/VI/EN/ZH',
 
 'Lgh':'Kami hadir di Hualien, di sisi Anda','Lgs':'Dari pasar lokal hingga pusat komunitas, kami melayani setiap sudut.',
 'Lgc1':'Foto bersama lansia — semangat layanan kami',
@@ -911,14 +1146,14 @@ id:{
 
 'Lsh':'3 Layanan Profesional','Lss':'Solusi khusus untuk kebutuhan keluarga.',
 'Ls1t':'Perawatan Rumah','Ls1d':'Menjaga kebersihan dan martabat di rumah.',
-'Ls1ul':'<li>Mandi & Toilet</li><li>Makan & Ingatkan Obat</li><li>Mengubah posisi</li><li>Pendampingan Medis</li>','Ls1tag':'Subsidi LTC 2.0',
+'Ls1ul':'<li>Mandi & Toilet</li><li>Makan & Ingatkan Obat</li><li>Mengubah posisi</li><li>Pendampingan Medis</li>','Ls1tag':'Subsidi LTC 3.0',
 'Ls2t':'Layanan Istirahat','Ls2d':'Waktu istirahat untuk keluarga dan pengasuh.',
-'Ls2ul':'<li>Mengurangi stres pengasuh</li><li>Menggantikan hari libur pengasuh asing</li><li>Perawatan profesional terjamin</li><li>Meningkatkan kualitas perawatan</li>','Ls2tag':'Subsidi LTC 2.0',
+'Ls2ul':'<li>Mengurangi stres pengasuh</li><li>Menggantikan hari libur pengasuh asing</li><li>Perawatan profesional terjamin</li><li>Meningkatkan kualitas perawatan</li>','Ls2tag':'Subsidi LTC 3.0',
 'Ls3t':'Perawatan Jangka Pendek','Ls3d':'Dukungan saat pengasuh asing pulang.',
 'Ls3ul':'<li>Saat keluarga pengasuh datang</li><li>Saat pengasuh pulang kampung</li><li>Perawatan pengganti intensif</li>','Ls3tag':'Evaluasi per kasus',
 
 'Lch':'Biaya: Disubsidi Tinggi','Lcs':'Ditagih per item layanan, disubsidi berdasarkan pendapatan.',
-'Lci':'LTC 2.0 punya <strong>3 tingkatan subsidi berdasarkan pendapatan</strong>. Semakin rendah pendapatan, semakin besar subsidi. <strong>Maksimal: 16%. Minimal: 5%. Miskin: 0%.</strong>',
+'Lci':'LTC 3.0 punya <strong>3 tingkatan subsidi berdasarkan pendapatan</strong>. Semakin rendah pendapatan, semakin besar subsidi. <strong>Maksimal: 16%. Minimal: 5%. Miskin: 0%.</strong>',
 'Lth1':'Kategori','Lth3':'Subsidi','Lth4':'Anda Bayar',
 'Lc1n':'<strong>Umum (Kat. 1)</strong>',
 'Lc2n':'<strong>Menengah ke Bawah (Kat. 2)</strong>',
@@ -932,8 +1167,27 @@ id:{
 'Ltv3t':'Petugas tetap','Ltv3d':'Petugas yang sama ditugaskan agar keluarga nyaman',
 'Ltv4t':'Update berkala','Ltv4d':'Pengawas memberi update agar keluarga jauh tetap tenang',
 
+'LadvH':'Mengapa Memilih Yi Xin Chen? 4 Komitmen Kami',
+'LadvS':'Membangun kepercayaan melalui profesionalisme dan perawatan lokal yang hangat.',
+'La1t':'Profesionalisme & Eksekusi Sistematis',
+'La1d':'<strong>Kerja tim lintas disiplin:</strong> Konferensi rutin memastikan rencana perawatan selalu optimal.<br><strong>Peningkatan kualitas:</strong> Audit ketat dan umpan balik keluarga untuk peningkatan berkelanjutan.',
+'La2t':'Pemuda Lokal yang Kembali',
+'La2d':'<strong>Akar lokal yang kuat:</strong> Didirikan oleh pemuda lokal yang kembali, memberikan perawatan sehangat rumah.<br><strong>Penghargaan budaya:</strong> Memasukkan makanan dan lagu tradisional adat agar lansia merasa nyaman.',
+'La3t':'Organisasi yang Terus Belajar',
+'La3d':'<strong>Peningkatan keterampilan:</strong> Pelatihan rutin (seperti CPR+AED) untuk staf garda depan.<br><strong>Pengajaran & pewarisan:</strong> Berpartisipasi aktif dalam budidaya bakat dan program magang.',
+'La4t':'Integrasi Komunitas',
+'La4d':'<strong>Kolaborasi lintas unit:</strong> Bermitra dengan organisasi lokal seperti Asosiasi Lansia Chongde untuk membangun jaringan perawatan.',
+
+'LtmH':'Tonggak Sejarah & Visi',
+'LtmS':'Langkah demi langkah, tumbuh bersama komunitas lokal kami.',
+'Lt1y':'Nov 2023', 'Lt1t':'Pendirian', 'Lt1d':'Yi Xin Chen resmi diluncurkan, memulai babak baru layanan lokal.',
+'Lt2y':'2024', 'Lt2t':'Layanan Budaya Unggulan', 'Lt2d':'Memperkenalkan perawatan multikultural: memadukan makanan dan lagu tradisional adat.',
+'Lt3y':'2025', 'Lt3t':'Evaluasi Lulus', 'Lt3d':'Lulus Evaluasi Perawatan Rumah, menerima pengakuan pemerintah atas kualitas profesional.',
+'Lt4y':'2026', 'Lt4t':'Kolaborasi Lokal Mendalam', 'Lt4d':'Bermitra dengan "Asosiasi Lansia Chongde" untuk mendirikan pusat perawatan komunitas.',
+'Lt5y':'Visi Masa Depan', 'Lt5t':'Perlindungan Berkelanjutan', 'Lt5d':'Terus meningkatkan kapasitas layanan untuk menjadi mitra LTC paling tepercaya di Hualien.',
+
 'Lfwh':'Untuk Pengasuh Asing','Lfws':'Perlu cuti tapi khawatir tidak ada yang merawat lansia majikan? Ada solusinya',
-'Lfwt':'💡 LTC 2.0 membantu majikan Anda',
+'Lfwt':'💡 LTC 3.0 membantu majikan Anda',
 'Lfwn':'Bagikan informasi ini ke majikan Anda atau minta mereka menghubungi kami. Kami mengurus dokumen dalam Bahasa Mandarin.',
 
 'Lph':'Kami Memahami Kekhawatiran Anda','Lps':'Banyak keluarga memiliki kekhawatiran serupa',
@@ -952,7 +1206,7 @@ id:{
 'Lan':'KTP di luar Hualien tidak masalah — yang penting tempat tinggal aktual di area ini.',
 'Lmb':'Lihat di Google Maps',
 
-'Lqh':'Pertanyaan Umum','Lqs':'Yang paling sering ditanyakan',
+'Lqh':'Pertanyaan Umum','Lqs':'Yang paling sering ditanyakan (Klik untuk meluas)',
 'Lq1':'Tinggal di Xiulin atau Shoufeng — bisa datang?','La1':'Bisa! Kami melayani seluruh wilayah tersebut.',
 'Lq2':'Lagi dirawat di RS, kapan bisa daftar?','La2':'Sekarang! Minta rujukan dari RS agar layanan 2x lebih cepat.',
 'Lq3':'Usia berapa warga adat bisa daftar?','La3':'Mulai usia 55 tahun — 10 tahun lebih awal dari warga biasa.',
