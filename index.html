@@ -76,7 +76,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .sh{font-size:var(--fsh2);font-weight:600;color:#222;margin-bottom:8px}
 .ss{font-size:var(--fs);color:#555;line-height:1.75;margin-bottom:24px}
 
-/* GALLERY & STORIES (無縫網格排版) */
+/* GALLERY & STORIES */
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
 .gallery-item{border-radius:12px;overflow:hidden;position:relative;aspect-ratio:4/3;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
 .gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
@@ -153,11 +153,25 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .ts-n{font-size:32px;font-weight:600;color:var(--g600);line-height:1.1;margin-bottom:4px}
 .ts-l{font-size:var(--fsm);color:#555;font-weight:600}
 .ts-s{font-size:var(--fss);color:#888;margin-top:2px}
-.team-vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.team-vals{display:grid;grid-template-columns:repeat(2,1fr);gap:12px} /* 強制2x2排版 */
 .tv{background:#fff;border:1px solid #eaeaea;border-radius:12px;padding:16px;display:flex;align-items:flex-start;gap:12px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
 .tv-ico{font-size:24px;flex-shrink:0}
 .tv-t{font-size:var(--fs);font-weight:600;color:#222;margin-bottom:4px}
 .tv-d{font-size:var(--fsm);color:#555;line-height:1.6}
+
+/* SATISFACTION SECTION */
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.stat-card { background: var(--g600); color: #fff; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 4px 12px rgba(46,125,82,0.15); }
+.stat-num { font-size: 38px; font-weight: 800; margin-bottom: 4px; display: block; }
+.stat-label { font-size: var(--fs); font-weight: 600; opacity: 0.9; display: block; margin-bottom: 4px; }
+.stat-desc { font-size: var(--fss); opacity: 0.8; margin-top: 6px; line-height: 1.4; }
+
+.review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.rv-card { background: #fff; border: 1px solid #eaeaea; padding: 20px; border-radius: 12px; position: relative; transition: 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.rv-card:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.08); }
+.rv-stars { color: #FFB800; font-size: 18px; margin-bottom: 10px; }
+.rv-t { font-size: var(--fsm); font-weight: 600; color: var(--g800); margin-bottom: 8px; line-height: 1.4; border-bottom: 1px solid var(--g50); padding-bottom: 8px; }
+.rv-d { font-size: var(--fsm); color: #555; line-height: 1.7; font-style: italic; }
 
 /* WHY US - 4 COMMITMENTS */
 .adv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
@@ -168,7 +182,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .adv-d strong { color: var(--g800); display: block; margin-top: 8px; font-weight: 600; }
 .adv-d strong:first-child { margin-top: 0; }
 
-/* TIMELINE (Pixel-Perfect Aligned) */
+/* TIMELINE */
 .timeline-wrap { background: #fff; border: 1px solid #eaeaea; border-radius: 12px; padding: 32px 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-top: 16px; }
 .timeline { position: relative; max-width: 600px; margin: 0 auto; padding-left: 32px; }
 .timeline::before { content: ''; position: absolute; top: 8px; left: 10px; bottom: 8px; width: 4px; background: var(--g100); border-radius: 2px; }
@@ -179,6 +193,21 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .tl-content { background: var(--g50); padding: 16px 20px; border-radius: 12px; border-left: 4px solid var(--g600); }
 .tl-t { font-size: var(--fs); font-weight: 600; color: var(--g800); margin-bottom: 6px; }
 .tl-d { font-size: var(--fsm); color: #444; line-height: 1.6; }
+
+/* ELIGIBILITY & PHILOSOPHY */
+.elig-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+.elig-card { background: #fff; border: 1px solid var(--g100); border-radius: 12px; padding: 20px 16px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+.ec-age { font-size: 28px; font-weight: 800; color: var(--g600); margin-bottom: 8px; line-height: 1; }
+.ec-t { font-size: var(--fsm); font-weight: 600; color: #222; margin-bottom: 6px; }
+.ec-d { font-size: var(--fss); color: #666; line-height: 1.5; }
+
+.phil-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+.phil-card { background: #fff; border: 1px solid #eaeaea; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: relative; overflow: hidden; }
+.phil-card::before { content:''; position: absolute; top:0; left:0; width:100%; height:4px; background: var(--g600); }
+.ph-n { width: 32px; height: 32px; background: var(--g50); color: var(--g800); font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; font-size: 16px; }
+.ph-t { font-size: var(--fsm); font-weight: 600; color: #222; margin-bottom: 8px; line-height: 1.4; }
+.ph-d { font-size: var(--fsm); color: #555; line-height: 1.6; }
+.ph-d strong { color: var(--g600); font-weight: 600; }
 
 /* FOREIGN INFO */
 .fw-box{background:#fff;border:1px solid #eaeaea;border-radius:12px;padding:24px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
@@ -254,6 +283,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
 .back-to-top { position: fixed; bottom: 30px; right: 20px; width: 44px; height: 44px; background: var(--g600); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; opacity: 0; visibility: hidden; transition: 0.3s; }
 .back-to-top.show { opacity: 1; visibility: visible; }
 
+/* 針對小螢幕的手機版調整 */
 @media(max-width:800px){ .nav-links{display:none} }
 @media(max-width:500px){
   .hero h1{font-size:24px}
@@ -262,6 +292,8 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   .gallery-item.wide{grid-column:span 2; grid-row: auto; aspect-ratio:4/3} 
   .ctbl th, .ctbl td {padding:10px 6px;font-size:14px}
   .pp{font-size:16px;padding:4px 8px}
+  /* 手機版時，把 2x2 排版都變回單行 */
+  .team-vals, .elig-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -530,6 +562,50 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   </div>
 </div>
 
+<div class="sec sec-green">
+  <div class="sh" id="LsatH">用數據看見懿芯辰的用心</div>
+  <div class="ss" id="LsatS">年度家屬滿意度調查，每一份數據都來自案家最真實的聲音與肯定。</div>
+  
+  <div class="stat-grid">
+    <div class="stat-card">
+      <span class="stat-num">95.71%</span>
+      <span class="stat-label" id="LsatL1">整體服務滿意度</span>
+      <p class="stat-desc" id="LsatD1">相當於 4.8 分的高評價 (滿分 5 分)</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">96%+</span>
+      <span class="stat-label" id="LsatL2">督導服務滿意度</span>
+      <p class="stat-desc" id="LsatD2">在服務安排與協調表現，持續穩定維持高水準</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">100%</span>
+      <span class="stat-label" id="LsatL3">真實意見回饋</span>
+      <p class="stat-desc" id="LsatD3">問卷回收率達100%，確保聽見每一位家屬的心聲</p>
+    </div>
+  </div>
+
+  <div class="sh" id="LrvH">聽聽家屬怎麼說</div>
+  <div class="ss" id="LrvS">來自服務家庭的真實回饋，是我們前進的最大動力。</div>
+  
+  <div class="review-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+    <div class="rv-card">
+      <div class="rv-stars">★★★★★</div>
+      <div class="rv-t" id="LrvT1">「生活品質提升，減輕家屬負擔！」</div>
+      <div class="rv-d" id="LrvD1">自從有了懿芯辰的服務介入後，長輩的日常生活品質獲得明顯提升，也真的大大減輕了我們家屬的照顧壓力。</div>
+    </div>
+    <div class="rv-card">
+      <div class="rv-stars">★★★★★</div>
+      <div class="rv-t" id="LrvT2">「像家人一樣細心與同理心」</div>
+      <div class="rv-d" id="LrvD2">服務人員非常親切且主動溝通，能依照長輩的個別需求提供協助，讓我們建立了深厚的信任感。</div>
+    </div>
+    <div class="rv-card">
+      <div class="rv-stars">★★★★★</div>
+      <div class="rv-t" id="LrvT3">「尊重隱私，服務準時且專業」</div>
+      <div class="rv-d" id="LrvD3">服務人員時間觀念良好，非常尊重長輩的隱私與尊嚴。專業的態度讓我們非常放心將家人交給他們。</div>
+    </div>
+  </div>
+</div>
+
 <div class="sec">
   <div class="sh" id="LadvH">為什麼選擇懿芯辰？我們的四大堅持</div>
   <div class="ss" id="LadvS">建立品牌信任感，我們用專業與在地溫情守護您的家人</div>
@@ -630,7 +706,62 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   </div>
 </div>
 
-<div class="sec sec-alt" id="steps">
+<div class="sec sec-alt">
+  <div class="sh" id="LelH">長照 3.0：專業溫度的生活守護</div>
+  <div class="ss" id="LelS">長照服務對象與我們的核心理念，釐清常見誤區，找回正常生活的尊嚴。</div>
+
+  <div style="font-size:var(--fsh3);font-weight:600;color:var(--g800);margin-bottom:12px" id="LelT1">👨‍👩‍👧‍👦 誰可以申請？</div>
+  <p style="margin-bottom:16px; font-size:var(--fsm); color:#555;" id="LelD1">只要經政府評估為 CMS 第 2 級（含）以上，並符合以下任一條件：</p>
+  
+  <div class="elig-grid">
+    <div class="elig-card">
+      <div class="ec-age">65+</div>
+      <div class="ec-t" id="Lec1t">歲以上長者</div>
+      <div class="ec-d" id="Lec1d">失能、衰弱、或失能之獨居長者</div>
+    </div>
+    <div class="elig-card">
+      <div class="ec-age">55+</div>
+      <div class="ec-t" id="Lec2t">歲以上原住民</div>
+      <div class="ec-d" id="Lec2d">經評估為失能者</div>
+    </div>
+    <div class="elig-card">
+      <div class="ec-age" style="font-size:24px; padding-top:4px;" id="Lec3a">不限年齡</div>
+      <div class="ec-t" id="Lec3t">失智症者</div>
+      <div class="ec-d" id="Lec3d">經醫師診斷即可，2026新制全面放寬</div>
+    </div>
+    <div class="elig-card">
+      <div class="ec-age" style="font-size:24px; padding-top:4px;" id="Lec4a">不限年齡</div>
+      <div class="ec-t" id="Lec4t">身心障礙者</div>
+      <div class="ec-d" id="Lec4d">領有身心障礙證明</div>
+    </div>
+    <div class="elig-card" style="grid-column: 1 / -1;">
+      <div class="ec-age" style="font-size:24px; padding-top:4px;" id="Lec5a">不限年齡</div>
+      <div class="ec-t" id="Lec5t">出院銜接（PAC）</div>
+      <div class="ec-d" id="Lec5d">有復健潛能、需出院銜接服務者</div>
+    </div>
+  </div>
+
+  <div style="font-size:var(--fsh3);font-weight:600;color:var(--g800);margin:32px 0 16px" id="LphT1">🌟 我們的服務理念：尊嚴、生活、復能</div>
+  <div class="phil-grid">
+    <div class="phil-card">
+      <div class="ph-n">1</div>
+      <div class="ph-t" id="Lph1t">失能不等於身障，而是生活的再調整</div>
+      <div class="ph-d" id="Lph1d">「失能」是指在日常生活中需要他人協助，這並不代表身心障礙。長照服務的介入，是為了彌補因功能退化帶來的不便，讓長者在熟悉的環境中，依然能保有選擇生活方式的<strong>尊嚴</strong>。</div>
+    </div>
+    <div class="phil-card">
+      <div class="ph-n">2</div>
+      <div class="ph-t" id="Lph2t">是「協助者」而非「打掃工人」</div>
+      <div class="ph-d" id="Lph2d">長照人員是受過專業訓練的照護專家，而非單純的體力勞動者。我們不只是完成工作，而是協助維持生活尊嚴，成為減輕家屬雙重壓力的<strong>協助者</strong>。</div>
+    </div>
+    <div class="phil-card">
+      <div class="ph-n">3</div>
+      <div class="ph-t" id="Lph3t">從「代勞」走向「復能」</div>
+      <div class="ph-d" id="Lph3d">長照的最高境界是協助生活，而非替代生活。我們鼓勵個案在能力範圍內自立生活，若能透過專業引導達成<strong>復能</strong>，重拾活動能力，是長照服務最美好的目標。</div>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="steps">
   <div class="sh" id="Lfh">申請服務，只要四步驟</div>
   <div class="ss" id="Lfs">從第一通電話到開始服務，全程陪您走</div>
   <div class="flow">
@@ -641,7 +772,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   </div>
 </div>
 
-<div class="sec">
+<div class="sec sec-alt">
   <div class="sh" id="Lah">服務範圍</div>
   <div class="ss" id="Las">無論戶籍在哪裡，只要您的家人居住在以下地區，就能享受我們的溫暖服務</div>
   <div class="area-box">
@@ -655,7 +786,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f
   </div>
 </div>
 
-<div class="sec sec-alt">
+<div class="sec">
   <div class="sh" id="Lqh">常見問題</div>
   <div class="ss" id="Lqs">家屬最常問我們的問題（點擊可展開回答）</div>
   <div>
@@ -824,6 +955,17 @@ zh:{
 'Ltv3t':'固定照服員','Ltv3d':'盡量安排固定人員，讓長輩建立熟悉感與安全感',
 'Ltv4t':'定期回報','Ltv4d':'督導定期向家屬回報長輩狀況，讓外地家屬也能安心',
 
+'LsatH':'用數據看見懿芯辰的用心',
+'LsatS':'年度家屬滿意度調查，每一份數據都來自案家最真實的聲音與肯定。',
+'LsatL1':'整體服務滿意度', 'LsatD1':'相當於 4.8 分的高評價 (滿分 5 分)',
+'LsatL2':'督導服務滿意度', 'LsatD2':'在服務安排與協調表現，持續穩定維持高水準',
+'LsatL3':'真實意見回饋', 'LsatD3':'問卷回收率達100%，確保聽見每一位家屬的心聲',
+'LrvH':'聽聽家屬怎麼說',
+'LrvS':'來自服務家庭的真實回饋，是我們前進的最大動力。',
+'LrvT1':'「生活品質提升，減輕家屬負擔！」', 'LrvD1':'自從有了懿芯辰的服務介入後，長輩的日常生活品質獲得明顯提升，也真的大大減輕了我們家屬的照顧壓力。',
+'LrvT2':'「像家人一樣細心與同理心」', 'LrvD2':'服務人員非常親切且主動溝通，能依照長輩的個別需求提供協助，讓我們建立了深厚的信任感。',
+'LrvT3':'「尊重隱私，服務準時且專業」', 'LrvD3':'服務人員時間觀念良好，非常尊重長輩的隱私與尊嚴。專業的態度讓我們非常放心將家人交給他們。',
+
 'LadvH':'為什麼選擇懿芯辰？我們的四大堅持',
 'LadvS':'建立品牌信任感，我們用專業與在地溫情守護您的家人',
 'La1t':'專業與制度的扎實執行',
@@ -851,6 +993,25 @@ zh:{
 'Lpq1':'「爸媽不願意讓外人進家門，怎麼辦？」','Lpa1l':'我們的做法','Lpa1':'先陪您一起家訪，讓長輩慢慢認識照服員，建立信任後才開始服務，完全不強迫。',
 'Lpq2':'「長照申請很複雜，不知道怎麼開始…」','Lpa2l':'我們的做法','Lpa2':'只要打一通電話，我們協助聯絡照管中心、陪同評估，所有手續都有人幫忙。',
 'Lpq3':'「我在外地工作，沒辦法常回花蓮照顧…」','Lpa3l':'我們的做法','Lpa3':'督導定期向您回報長輩狀況，讓您在遠方也能掌握，安心工作不用每天擔心。',
+
+/* 申請資格與核心理念 */
+'LelH':'長照 3.0：專業溫度的生活守護',
+'LelS':'長照服務對象與我們的核心理念，釐清常見誤區，找回正常生活的尊嚴。',
+'LelT1':'👨‍👩‍👧‍👦 誰可以申請？',
+'LelD1':'只要經政府評估為 CMS 第 2 級（含）以上，並符合以下任一條件：',
+'Lec1t':'歲以上長者', 'Lec1d':'失能、衰弱、或失能之獨居長者',
+'Lec2t':'歲以上原住民', 'Lec2d':'經評估為失能者',
+'Lec3a':'不限年齡', 'Lec3t':'失智症者', 'Lec3d':'經醫師診斷即可，2026新制全面放寬',
+'Lec4a':'不限年齡', 'Lec4t':'身心障礙者', 'Lec4d':'領有身心障礙證明',
+'Lec5a':'不限年齡', 'Lec5t':'出院銜接（PAC）', 'Lec5d':'有復健潛能、需出院銜接服務者',
+
+'LphT1':'🌟 我們的服務理念：尊嚴、生活、復能',
+'Lph1t':'失能不等於身障，而是生活的再調整',
+'Lph1d':'「失能」是指在日常生活中需要他人協助，這並不代表身心障礙。長照服務的介入，是為了彌補因功能退化帶來的不便，讓長者在熟悉的環境中，依然能保有選擇生活方式的<strong>尊嚴</strong>。',
+'Lph2t':'是「協助者」而非「打掃工人」',
+'Lph2d':'長照人員是受過專業訓練的照護專家，而非單純的體力勞動者。我們不只是完成工作，而是協助維持生活尊嚴，成為減輕家屬雙重壓力的<strong>協助者</strong>。',
+'Lph3t':'從「代勞」走向「復能」',
+'Lph3d':'長照的最高境界是協助生活，而非替代生活。我們鼓勵個案在能力範圍內自立生活，若能透過專業引導達成<strong>復能</strong>，重拾活動能力，是長照服務最美好的目標。',
 
 'Lfh':'申請服務，只要四步驟','Lfs':'從第一通電話到開始服務，全程陪您走',
 'Lf1t':'聯絡我們','Lf1d':'電話或Line諮詢，免費初步評估',
@@ -939,6 +1100,17 @@ en:{
 'Ltv3t':'Consistent caregivers','Ltv3d':'We assign the same caregiver so your loved one builds familiarity',
 'Ltv4t':'Regular updates','Ltv4d':'Supervisors keep family informed so you can work in peace',
 
+'LsatH':'Our Care in Numbers',
+'LsatS':'Annual family satisfaction survey. Every data point comes from the true voices and affirmations of the families we serve.',
+'LsatL1':'Overall Satisfaction', 'LsatD1':'Equivalent to a high rating of 4.8 (out of 5)',
+'LsatL2':'Supervisor Satisfaction', 'LsatD2':'Consistently maintaining high standards in service arrangement and coordination',
+'LsatL3':'Genuine Feedback', 'LsatD3':'100% questionnaire return rate, ensuring every family\'s voice is heard',
+'LrvH':'What Families Say',
+'LrvS':'Real feedback from the families we serve is our biggest driving force.',
+'LrvT1':'"Improved quality of life, eased family burden!"', 'LrvD1':'Since Yi Xin Chen intervened, the elders\' daily quality of life has significantly improved, truly reducing our caregiving stress.',
+'LrvT2':'"As attentive and empathetic as family"', 'LrvD2':'The staff are very friendly and proactive. They assist based on individual needs, building deep trust.',
+'LrvT3':'"Respects privacy, punctual and professional"', 'LrvD3':'Staff have great time management and deeply respect the elders\' privacy and dignity. We feel safe leaving our family with them.',
+
 'LadvH':'Why Choose Yi Xin Chen? Our 4 Core Commitments',
 'LadvS':'Building trust through professionalism and warm, local care for your family.',
 'La1t':'Professionalism & Systematic Execution',
@@ -966,6 +1138,23 @@ en:{
 'Lpq1':'"My parents refuse to let strangers in."','Lpa1l':'Our approach','Lpa1':'We join you for the first home visit to build trust gradually. No pressure.',
 'Lpq2':'"The application is complicated."','Lpa2l':'Our approach','Lpa2':'One call is all it takes. We help you through every step of the paperwork.',
 'Lpq3':'"I work away and can\'t come back often."','Lpa3l':'Our approach','Lpa3':'Our supervisors send regular updates so you always know your loved one\'s status.',
+
+'LelH':'Long-Term Care 3.0: Professional & Warm Guardianship',
+'LelS':'Who is eligible for care and our core philosophy.',
+'LelT1':'👨‍👩‍👧‍👦 Who can apply?',
+'LelD1':'Assessed as CMS Level 2+ and meets one of the following:',
+'Lec1t':'Elders aged 65+', 'Lec1d':'Frail, living alone, or with disabilities.',
+'Lec2t':'Indigenous aged 55+', 'Lec2d':'Assessed as having disabilities.',
+'Lec3a':'No Age Limit', 'Lec3t':'Dementia Patients', 'Lec3d':'Doctor diagnosis required. Broadened under 2026 rules.',
+'Lec4a':'No Age Limit', 'Lec4t':'People with Disabilities', 'Lec4d':'Holding a disability certificate.',
+'Lec5a':'No Age Limit', 'Lec5t':'PAC (Post-Acute Care)', 'Lec5d':'Patients with rehab potential needing seamless discharge care.',
+'LphT1':'🌟 Our Philosophy: Dignity, Life, Reablement',
+'Lph1t':'Disability != Disabled',
+'Lph1d':'It means needing daily help. We intervene to help elders keep the <strong>Dignity</strong> to choose their lifestyle.',
+'Lph2t':'Assistants, not Cleaners',
+'Lph2d':'Caregivers are trained pros. We are strong <strong>Assistants</strong> to families, relieving physical and mental stress.',
+'Lph3t':'From Serving to Reablement',
+'Lph3d':'The highest goal is to support life, not replace it. We encourage independence and strive for <strong>Reablement</strong>.',
 
 'Lfh':'Four Simple Steps','Lfs':'From first call to first visit, we walk with you',
 'Lf1t':'Contact Us','Lf1d':'Free consultation by phone or Line',
@@ -1053,6 +1242,17 @@ vi:{
 'Ltv3t':'Nhân viên cố định','Ltv3d':'Tạo sự quen thuộc và tin tưởng',
 'Ltv4t':'Cập nhật thường xuyên','Ltv4d':'Giám sát báo cáo cho gia đình an tâm',
 
+'LsatH':'Sự Chăm Sóc Của Chúng Tôi Qua Những Con Số',
+'LsatS':'Khảo sát mức độ hài lòng hàng năm. Mỗi dữ liệu đến từ tiếng nói chân thực của các gia đình.',
+'LsatL1':'Hài Lòng Tổng Thể', 'LsatD1':'Tương đương đánh giá cao 4.8 (trên 5)',
+'LsatL2':'Hài Lòng Giám Sát', 'LsatD2':'Luôn duy trì tiêu chuẩn cao trong việc sắp xếp và điều phối dịch vụ',
+'LsatL3':'Phản Hồi Chân Thực', 'LsatD3':'Tỷ lệ thu hồi bảng hỏi 100%, đảm bảo lắng nghe mọi gia đình',
+'LrvH':'Gia Đình Nói Gì Về Chúng Tôi',
+'LrvS':'Phản hồi thực tế từ các gia đình là động lực lớn nhất của chúng tôi.',
+'LrvT1':'"Nâng cao chất lượng sống, giảm gánh nặng gia đình!"', 'LrvD1':'Từ khi có Yi Xin Chen, chất lượng sống hàng ngày của người lớn tuổi cải thiện rõ rệt, thực sự giảm bớt áp lực chăm sóc cho chúng tôi.',
+'LrvT2':'"Chu đáo và đồng cảm như người nhà"', 'LrvD2':'Nhân viên rất thân thiện và chủ động. Họ hỗ trợ theo nhu cầu cá nhân, tạo dựng niềm tin sâu sắc.',
+'LrvT3':'"Tôn trọng quyền riêng tư, đúng giờ và chuyên nghiệp"', 'LrvD3':'Nhân viên quản lý thời gian tốt và rất tôn trọng sự riêng tư của người cao tuổi. Chúng tôi rất yên tâm giao phó người thân.',
+
 'LadvH':'Tại sao chọn Yi Xin Chen? 4 Cam kết cốt lõi',
 'LadvS':'Xây dựng lòng tin thông qua sự chuyên nghiệp và sự chăm sóc ấm áp, đậm chất địa phương.',
 'La1t':'Chuyên nghiệp & Thực thi hệ thống',
@@ -1080,6 +1280,23 @@ vi:{
 'Lpq1':'"Bố mẹ không muốn người lạ vào nhà."','Lpa1l':'Giải pháp của chúng tôi','Lpa1':'Chúng tôi đến thăm cùng bạn trước để làm quen từ từ. Không ép buộc.',
 'Lpq2':'"Thủ tục quá phức tạp."','Lpa2l':'Giải pháp','Lpa2':'Chỉ cần gọi, chúng tôi hỗ trợ toàn bộ quy trình giấy tờ.',
 'Lpq3':'"Tôi làm việc ở xa."','Lpa3l':'Giải pháp','Lpa3':'Chúng tôi cập nhật tình hình thường xuyên để bạn yên tâm.',
+
+'LelH':'Chăm sóc dài hạn 3.0: Bảo vệ bằng sự chuyên nghiệp',
+'LelS':'Ai đủ điều kiện và triết lý cốt lõi của chúng tôi.',
+'LelT1':'👨‍👩‍👧‍👦 Ai có thể đăng ký?',
+'LelD1':'Được đánh giá CMS cấp 2+ và đáp ứng một trong các điều kiện:',
+'Lec1t':'Người cao tuổi 65+', 'Lec1d':'Sức yếu, sống một mình hoặc khuyết tật.',
+'Lec2t':'Người bản địa 55+', 'Lec2d':'Được đánh giá là khuyết tật.',
+'Lec3a':'Không giới hạn tuổi', 'Lec3t':'Bệnh nhân sa sút trí tuệ', 'Lec3d':'Chỉ cần chẩn đoán của bác sĩ. Mở rộng theo luật mới 2026.',
+'Lec4a':'Không giới hạn tuổi', 'Lec4t':'Người khuyết tật', 'Lec4d':'Có chứng nhận khuyết tật.',
+'Lec5a':'Không giới hạn tuổi', 'Lec5t':'PAC (Chăm sóc sau cấp tính)', 'Lec5d':'Bệnh nhân có khả năng phục hồi cần chăm sóc sau xuất viện.',
+'LphT1':'🌟 Triết lý của chúng tôi: Tôn nghiêm, Cuộc sống, Phục hồi',
+'Lph1t':'Mất chức năng không phải tàn tật',
+'Lph1d':'Đó là cần trợ giúp hàng ngày. Chúng tôi giúp giữ <strong>Tôn nghiêm</strong> trong lối sống.',
+'Lph2t':'Trợ thủ, không phải Người dọn dẹp',
+'Lph2d':'Nhân viên là chuyên gia. Chúng tôi là <strong>Trợ thủ</strong> đắc lực, giảm căng thẳng cho gia đình.',
+'Lph3t':'Hướng tới Phục hồi',
+'Lph3d':'Mục tiêu cao nhất là hỗ trợ, không phải thay thế. Khuyến khích sống tự lập và hướng tới <strong>Phục hồi chức năng</strong>.',
 
 'Lfh':'Bốn Bước Đơn Giản','Lfs':'Chúng tôi đồng hành cùng bạn',
 'Lf1t':'Liên hệ','Lf1d':'Tư vấn miễn phí qua Line/Điện thoại',
@@ -1167,6 +1384,17 @@ id:{
 'Ltv3t':'Petugas tetap','Ltv3d':'Petugas yang sama ditugaskan agar keluarga nyaman',
 'Ltv4t':'Update berkala','Ltv4d':'Pengawas memberi update agar keluarga jauh tetap tenang',
 
+'LsatH':'Perawatan Kami dalam Angka',
+'LsatS':'Survei kepuasan tahunan. Setiap data berasal dari suara dan dukungan nyata keluarga yang kami layani.',
+'LsatL1':'Kepuasan Keseluruhan', 'LsatD1':'Setara dengan peringkat tinggi 4.8 (dari 5)',
+'LsatL2':'Kepuasan Pengawas', 'LsatD2':'Secara konsisten mempertahankan standar tinggi dalam pengaturan dan koordinasi layanan',
+'LsatL3':'Umpan Balik Nyata', 'LsatD3':'Tingkat pengembalian kuesioner 100%, memastikan setiap suara keluarga didengar',
+'LrvH':'Apa Kata Keluarga',
+'LrvS':'Umpan balik nyata dari keluarga yang kami layani adalah kekuatan pendorong terbesar kami.',
+'LrvT1':'"Meningkatkan kualitas hidup, meringankan beban keluarga!"', 'LrvD1':'Sejak Yi Xin Chen membantu, kualitas hidup lansia meningkat secara signifikan, benar-benar mengurangi stres perawatan kami.',
+'LrvT2':'"Penuh perhatian dan empati seperti keluarga"', 'LrvD2':'Staf sangat ramah dan proaktif. Mereka membantu berdasarkan kebutuhan individu, membangun kepercayaan yang mendalam.',
+'LrvT3':'"Menghormati privasi, tepat waktu dan profesional"', 'LrvD3':'Staf memiliki manajemen waktu yang baik dan sangat menghargai privasi lansia. Kami merasa aman mempercayakan keluarga kami.',
+
 'LadvH':'Mengapa Memilih Yi Xin Chen? 4 Komitmen Kami',
 'LadvS':'Membangun kepercayaan melalui profesionalisme dan perawatan lokal yang hangat.',
 'La1t':'Profesionalisme & Eksekusi Sistematis',
@@ -1194,6 +1422,23 @@ id:{
 'Lpq1':'"Orang tua menolak orang asing."','Lpa1l':'Pendekatan kami','Lpa1':'Kami menemani kunjungan pertama untuk membangun kepercayaan perlahan.',
 'Lpq2':'"Prosedurnya terlalu rumit."','Lpa2l':'Pendekatan kami','Lpa2':'Cukup satu telepon. Kami bantu seluruh prosesnya.',
 'Lpq3':'"Saya kerja di luar kota."','Lpa3l':'Pendekatan kami','Lpa3':'Kami memberi update rutin agar Anda tenang bekerja.',
+
+'LelH':'Perawatan Jangka Panjang 3.0: Perlindungan Profesional',
+'LelS':'Siapa yang berhak dan filosofi inti kami.',
+'LelT1':'👨‍👩‍👧‍👦 Siapa yang bisa mendaftar?',
+'LelD1':'Dinilai CMS Level 2+ oleh pemerintah dan memenuhi salah satu syarat:',
+'Lec1t':'Lansia 65+', 'Lec1d':'Lemah, hidup sendiri, atau disabilitas.',
+'Lec2t':'Warga adat 55+', 'Lec2d':'Dinilai memiliki disabilitas.',
+'Lec3a':'Tanpa Batas Usia', 'Lec3t':'Pasien Demensia', 'Lec3d':'Cukup diagnosis dokter. Diperluas berdasarkan aturan baru 2026.',
+'Lec4a':'Tanpa Batas Usia', 'Lec4t':'Penyandang Disabilitas', 'Lec4d':'Memiliki sertifikat disabilitas.',
+'Lec5a':'Tanpa Batas Usia', 'Lec5t':'PAC (Perawatan Pasca-Akut)', 'Lec5d':'Pasien berpotensi pulih yang butuh perawatan mulus pasca rawat inap.',
+'LphT1':'🌟 Filosofi Kami: Martabat, Kehidupan, Pemulihan',
+'Lph1t':'Disfungsi != Cacat',
+'Lph1d':'Ini berarti butuh bantuan harian. Kami membantu menjaga <strong>Martabat</strong>.',
+'Lph2t':'Asisten, bukan Pembersih',
+'Lph2d':'Petugas dilatih profesional. Kami adalah <strong>Asisten</strong> kuat bagi keluarga.',
+'Lph3t':'Menuju Pemulihan',
+'Lph3d':'Tujuan tertinggi adalah mendukung kemandirian dan <strong>Pemulihan (Reablement)</strong>.',
 
 'Lfh':'Empat Langkah Mudah','Lfs':'Dari telepon pertama hingga layanan dimulai',
 'Lf1t':'Hubungi','Lf1d':'Konsultasi gratis via telepon/Line',
